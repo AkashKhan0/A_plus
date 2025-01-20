@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { RiVideoOnAiFill } from "react-icons/ri";
 import { FaCameraRetro } from "react-icons/fa6";
+import { FaPhotoVideo } from "react-icons/fa";
 import { RiImageEditFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
 
@@ -60,6 +61,14 @@ const Upcoming = () => {
             <p className="u_description">
               Igniting the creativity with breathtaking stunning designs that
               make your brand identity sharper.
+            </p>
+          </div>
+          <div className="u_card u_box w-full">
+            <FaPhotoVideo className="u_icon" />
+            <h1 className="u_title">Videography</h1>
+            <p className="u_description">
+              Capturing moments with cinematic precision, creating stories that
+              define your brand's vision.
             </p>
           </div>
         </div>

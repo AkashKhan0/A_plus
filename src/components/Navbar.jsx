@@ -16,19 +16,33 @@ import { IoCall } from "react-icons/io5";
 import { MdUpcoming } from "react-icons/md";
 import { HiWrenchScrewdriver } from "react-icons/hi2";
 import { Link, useLocation } from "react-router-dom";
+import { RiArrowUpDownFill } from "react-icons/ri";
+import { TbSeo } from "react-icons/tb";
+import { CgWebsite } from "react-icons/cg";
+import { FaUsers } from "react-icons/fa6";
+import { MdOutlineSupportAgent, MdAnimation } from "react-icons/md";
 
 const Navbar = ({ toggleNavbar }) => {
   const location = useLocation();
   const isActive = (path) => {
     return location.pathname === path ? "active" : "";
   };
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prevState) => !prevState);
+  };
   return (
     <>
       <div className={`navbar w-full h-full relative`}>
-        <div className="navItems py-10 px-5 flex flex-col">
-          <div className="logo mb-10 w-full h-fit flex items-center justify-center">
+        <div className="navItems px-5 flex flex-col">
+          <div className="logo w-full h-fit flex items-center justify-center">
             <Link to="/" onClick={toggleNavbar}>
-              <img src={logo} alt="" className="w-40 h-24 object-contain" />
+              <img
+                src={logo}
+                alt=""
+                className="w-40 py-2 h-24 object-contain"
+              />
             </Link>
           </div>
 
@@ -53,14 +67,78 @@ const Navbar = ({ toggleNavbar }) => {
           </div>
 
           {/* menu items */}
-          <div className={`list duration-200 px-2 ${isActive("/services")}`}>
-            <Link to="/services" onClick={toggleNavbar}>
-              <p className="flex items-center gap-3">
-                <HiWrenchScrewdriver />
-                services
-              </p>
-            </Link>
+          <div
+            className={`list duration-200 px-2 cursor-pointer`}
+            onClick={toggleDropdown}
+          >
+            <p className="flex items-center gap-3">
+              <HiWrenchScrewdriver />
+              services
+              <RiArrowUpDownFill />
+            </p>
           </div>
+          {isDropdownOpen && (
+            <div className="drop_down ml-3">
+              <div
+                className={`list duration-200 px-2 ${isActive("/services")}`}
+              >
+                <Link to="/services" onClick={toggleNavbar}>
+                  <p className="flex items-center gap-3">
+                    <TbSeo />
+                    seo
+                  </p>
+                </Link>
+              </div>
+              <div
+                className={`list duration-200 px-2 ${isActive(
+                  "/services/uiux"
+                )}`}
+              >
+                <Link to="/services/uiux" onClick={toggleNavbar}>
+                  <p className="flex items-center gap-3">
+                    <CgWebsite />
+                    website ui/ux
+                  </p>
+                </Link>
+              </div>
+              <div
+                className={`list duration-200 px-2 ${isActive(
+                  "/services/smm"
+                )}`}
+              >
+                <Link to="/services/smm" onClick={toggleNavbar}>
+                  <p className="flex items-center gap-3">
+                    <FaUsers />
+                    marketing
+                  </p>
+                </Link>
+              </div>
+              <div
+                className={`list duration-200 px-2 ${isActive(
+                  "/services/tech"
+                )}`}
+              >
+                <Link to="/services/tech" onClick={toggleNavbar}>
+                  <p className="flex items-center gap-3">
+                    <MdOutlineSupportAgent />
+                    tech support
+                  </p>
+                </Link>
+              </div>
+              <div
+                className={`list duration-200 px-2 ${isActive(
+                  "/services/animation"
+                )}`}
+              >
+                <Link to="/services/animation" onClick={toggleNavbar}>
+                  <p className="flex items-center gap-3">
+                    <MdAnimation />
+                    animation
+                  </p>
+                </Link>
+              </div>
+            </div>
+          )}
 
           {/* menu items */}
           <div className={`list duration-200 px-2 ${isActive("/contact")}`}>

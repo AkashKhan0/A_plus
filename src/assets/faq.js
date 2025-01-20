@@ -1,11 +1,11 @@
 const faqData = [
   {
-    question: "What services does “A Plus Advertising agency” offer?",
+    question: "What services does “A Plus Advertising” offer?",
     answer:
-      "We provide comprehensive digital marketing solutions, including website design and development, search engine optimization (SEO), social media marketing, content creation, and pay-per-click (PPC) advertising.",
+      "We provide comprehensive digital marketing solutions, including website design and development, search engine optimization (SEO), social media marketing, content creation, and pay-per-click (PPC) advertising, Photography & videography, animation & cartoon. ",
   },
   {
-    question: "Why should you choose “A Plus Advertising agency”?",
+    question: "Why should you choose “A Plus Advertising”?",
     answer:
       "We prioritize your success by offering customized strategies tailored to your business needs. Our team of experts uses the latest industry tools and techniques to deliver measurable results.",
   },
@@ -16,18 +16,14 @@ const faqData = [
   },
   {
     question:
-      "Can “A Plus Advertising agency” guarantee your website will rank #1 on Google?",
+      "Can “A Plus Advertising” guarantee your website will rank #1 on Google?",
     answer:
-      "While we cannot guarantee a #1 ranking (and no ethical agency can), we ensure that your website follows best practices to significantly improve its visibility and ranking over time.",
+      "While we cannot guarantee a #1 ranking (and no ethical can), we ensure that your website follows best practices to significantly improve its visibility and ranking over time.",
   },
   {
     question: "What is the process for creating a website?",
     answer: `
-  Consultation: Understanding your business goals and requirements.
-  Design: Creating a user-friendly and visually appealing layout.
-  Development: Building the site with optimized code and functionality.
-  Launch: Testing and deploying the site.
-  Support: Providing ongoing maintenance and updates.
+  Firstly, we start with an appointment with you to get to know your business objectives and requirements. Next, we proceed to the design stage, which is where we come up with a user-friendly and visually attractive layout. During the development period, we construct the website with optimized code and functionalities. Once done, we make sure to test and deploy it thoroughly as a part of the site launch. Lastly, we offer continuosly support through the maintenance and updates to ensure your website keeps on operating in the best way possible.
     `,
   },
   {
@@ -54,6 +50,11 @@ const faqData = [
     question: "How can I get started with your services?",
     answer:
       "Getting started is easy! Simply contact us through our website, email, or phone, and our team will schedule a free consultation to discuss your needs and goals.",
+  },
+  {
+    question: "How is your refund policy and payment gateways?",
+    answer:
+      "We accept all kinds of payment methods around the world, making sure which payment gateway is comfortable for you. We also have a very easy and reliable refund policy. You can explore “Refund Policy” to know more.",
   },
 ];
 export default faqData;

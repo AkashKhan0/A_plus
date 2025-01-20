@@ -24,9 +24,12 @@ p {
 ::-webkit-scrollbar {
   display: none;
 }
+h2 {
+  letter-spacing: 2px;
+}
 .menu {
   z-index: 999;
-  background-color: #ff0018;
+  background-color: #971903;
 }
 .nav {
   position: fixed;
@@ -42,10 +45,12 @@ p {
   background-color: transparent;
   border-radius: 50px;
 }
+.Smallnav {
+  z-index: 777;
+}
 .navbar {
   background-color: transparent;
   backdrop-filter: blur(20px);
-  border: 2px solid rgba(255, 255, 255, 0.026);
   z-index: 888;
 }
 .que {
@@ -56,7 +61,7 @@ p {
 .answer {
   color: #eee;
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 1px;
   background-color: #7d7d7d11;
   backdrop-filter: blur(20px);
@@ -172,7 +177,7 @@ button {
 }
 .social {
   position: absolute;
-  bottom: 20px;
+  bottom: 5px;
   left: 0;
 }
 .navFoot {
@@ -490,6 +495,7 @@ button {
 .u_bg,
 .pvc_bg,
 .pro_bg,
+.re_bg,
 .con_bg {
   position: fixed;
   top: 0;
@@ -532,6 +538,9 @@ b {
 }
 .pro_bg {
   background-image: url("./pro_bg.jpg");
+}
+.re_bg {
+  background-image: url("./re_bg.jpg");
 }
 
 @media (max-width: 788px) {
@@ -610,8 +619,8 @@ b {
   cursor: pointer;
   transition: 0.3s;
   border-radius: 5px;
-  font-size: 18px;
-  letter-spacing: 2px;
+  font-size: 16px;
+  letter-spacing: 1px;
   font-weight: 400;
 }
 .clr {
@@ -848,10 +857,10 @@ textarea {
 .timline::after {
   content: "";
   position: absolute;
-  width: 6px;
+  width: 3px;
   height: 100%;
-  background-color: #eee;
-  margin-left: -3px;
+  background-color: #971903;
+  /* margin-left: -1px; */
   top: 0;
   left: 50%;
   z-index: -1;
@@ -1182,7 +1191,7 @@ textarea {
 .chat-button {
   position: fixed;
   bottom: 10px;
-  right: 20px;
+  right: 10px;
   color: #eee;
   padding: 8px;
   border-radius: 50%;
@@ -1224,4 +1233,112 @@ textarea {
 }
 .chat_w:hover {
   color: #25d366;
+}
+
+.counting {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #6e6e6e3a;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.counting1 {
+  width: fit-content;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.titel_count {
+  position: relative;
+  width: fit-content;
+}
+.titel_count span {
+  position: absolute;
+  width: 100%;
+  bottom: -10px;
+  left: 0px;
+  width: 50%;
+  height: 5px;
+  background-color: #971903;
+}
+
+.star {
+  display: inline-block;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.pay_card {
+  width: 80px;
+  height: 40px;
+  object-fit: fill;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.re_title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.re_p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+}
+.small_items {
+  border: 1px solid rgba(255, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 42px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px 0;
+}
+.icon_sm_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 30px;
+  background-color: #971903;
+  z-index: 2;
+  position: absolute;
+}
+.name_sm_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  height: 30px;
+  padding: 0px 10px;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  background-color: #971903;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+.small_items:hover {
+  width: fit-content;
+}
+.small_items:hover .name_sm_nav {
+  margin-left: 30px;
+}
+select {
+  color: #fff;
+  background-color: #11111100;
+}
+#opt {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+}
+select option:hover {
+  background-color: #971903;
 }

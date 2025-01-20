@@ -1,5 +1,5 @@
 import image1 from "./selim.jpg";
-import image2 from "./shoud.jpg";
+import image2 from "./selim.jpg";
 import image3 from "./fahad.jpg";
 import image4 from "./saki.jpg";
 import image5 from "./sakib.jpg";
@@ -8,7 +8,7 @@ const teamData = [
   {
     id: 1,
     name: "Md. selim khan",
-    description: "Owner of A Plus Advertising",
+    description: "Owner of A Plus Communication",
     image: image1,
   },
   {

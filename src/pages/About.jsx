@@ -18,8 +18,8 @@ const About = () => {
           </h1>
           <p className="my-10 text-justify font-normal text-lg">
             Some information about our company : Welcome to “A plus Advertising
-            Limited” , a proud sub-brand of “A plus Communication”, established
-            in 2024. We specialize in delivering high-quality services, ensuring
+            ” , a proud sub-brand of “A plus Communication”, established in
+            2024. We specialize in delivering high-quality services, ensuring
             value for your investment, and always adhering to timely work for
             maximum client satisfaction. Our commitment extends beyond just
             results; we’re here to provide unmatched client support every step

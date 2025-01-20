@@ -2,10 +2,20 @@ import React, { useEffect, useState } from "react";
 import reviewData from "../assets/review";
 import "./Slider.css";
 import { useNavigate } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 const Slider = () => {
   const navigate = useNavigate();
-  const [active, setActive] = useState(2); // Default active slide index
+  const [active, setActive] = useState(2);
+
+  const [projectCount, setProjectCount] = useState(0);
+  const [customerSatisfaction, setCustomerSatisfaction] = useState(0);
+  const [startCounting, setStartCounting] = useState(false);
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
 
   useEffect(() => {
     const items = document.querySelectorAll(".sliderr .itemms");
@@ -43,9 +53,8 @@ const Slider = () => {
     };
 
     loadShow(); // Call function whenever the active index changes
-  }, [active]); // Dependency on `active`
+  }, [active]);
 
-  // Handlers for next and previous buttons
   const handleNext = () => {
     setActive((prev) => (prev + 1 < reviewData.length ? prev + 1 : prev));
   };
@@ -53,6 +62,28 @@ const Slider = () => {
   const handlePrev = () => {
     setActive((prev) => (prev - 1 >= 0 ? prev - 1 : prev));
   };
+
+  useEffect(() => {
+    if (inView && !startCounting) {
+      setStartCounting(true);
+
+      const projectInterval = setInterval(() => {
+        setProjectCount((prev) => {
+          if (prev < 83) return prev + 1;
+          clearInterval(projectInterval);
+          return 83;
+        });
+      }, 2000 / 83);
+
+      const satisfactionInterval = setInterval(() => {
+        setCustomerSatisfaction((prev) => {
+          if (prev < 87) return prev + 1;
+          clearInterval(satisfactionInterval);
+          return 87;
+        });
+      }, 2000 / 87);
+    }
+  }, [inView, startCounting]);
 
   return (
     <>
@@ -71,12 +102,10 @@ const Slider = () => {
                 alt="image"
                 className=" w-28 h-28 object-cover mb-5 m-auto rounded-full"
               />
-              <h1 className="text-lg uppercase font-normal mb-2">
+              <h1 className="text-lg uppercase font-semibold mb-2">
                 {review.name}
               </h1>
-              <p className="text-base capitalize font-light">
-                {review.description}
-              </p>
+              <p className="text-base font-light">{review.description}</p>
             </div>
           ))}
           <button id="nextt" onClick={handleNext}>
@@ -88,6 +117,87 @@ const Slider = () => {
         </div>
       </div>
 
+      {/* counting review  */}
+      <div
+        ref={ref}
+        className="flex flex-col items-center justify-center text-white"
+      >
+        <h1 className="text-2xl sm:text-3xl text-center font-thin mb-10">
+          Our Achievements
+        </h1>
+        <div className="flex flex-wrap w-full items-start justify-evenly gap-5">
+          <div className="flex items-center flex-col gap-3 p-5">
+            <h2 className="text-2xl titel_count font-light">
+              Complete Project
+              <span
+                style={{
+                  display: "inline-block",
+                  width: `${projectCount}%`,
+                  height: "2px",
+                  background: "red",
+                  transition: "width 0.3s",
+                }}
+              ></span>
+            </h2>
+            <h2 className="text-4xl counting font-semibold">{projectCount}+</h2>
+          </div>
+          <div className="flex items-center flex-col gap-3 p-5">
+            <h2 className="text-2xl titel_count font-light">
+              Satisfied Customer
+              <span
+                style={{
+                  display: "inline-block",
+                  width: `${customerSatisfaction}%`,
+                  height: "2px",
+                  background: "red",
+                  transition: "width 0.3s",
+                }}
+              ></span>
+            </h2>
+            <h2 className="text-4xl counting font-semibold">
+              {customerSatisfaction}%
+            </h2>
+          </div>
+          <div className="flex items-center flex-col gap-3 p-5">
+            <h2 className="text-2xl titel_count font-light">
+              Review Rate
+              <span
+                style={{
+                  display: "inline-block",
+                  width: `${customerSatisfaction}%`,
+                  height: "2px",
+                  background: "red",
+                  transition: "width 0.3s",
+                }}
+              ></span>
+            </h2>
+            <h2 className="text-4xl counting1 font-semibold">
+              <div className="stars flex items-center">
+                {[...Array(5)].map((_, index) => (
+                  <div
+                    key={index}
+                    className="star"
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                      margin: "0 2px",
+                      background: `linear-gradient(90deg, red ${
+                        index < Math.floor(customerSatisfaction / 20)
+                          ? "100%"
+                          : index === Math.floor(customerSatisfaction / 20)
+                          ? `${(customerSatisfaction % 20) * 5}%`
+                          : "0%"
+                      }, #ccc 0%)`,
+                      clipPath:
+                        "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)",
+                    }}
+                  ></div>
+                ))}
+              </div>
+            </h2>
+          </div>
+        </div>
+      </div>
       {/* nine  */}
       <div className="flex flex-col items-center justify-center my-20 text-white">
         <p className="w-fit tspan text-2xl mb-10">

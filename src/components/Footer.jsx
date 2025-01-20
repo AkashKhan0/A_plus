@@ -5,6 +5,14 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { RiRoadMapFill } from "react-icons/ri";
 import { useNavigate } from "react-router-dom";
+import pay1 from "../assets/pay1.png";
+import pay2 from "../assets/pay2.png";
+import pay3 from "../assets/pay3.png";
+import pay4 from "../assets/pay4.jpg";
+import pay5 from "../assets/pay5.png";
+import pay6 from "../assets/pay6.jpg";
+import pay7 from "../assets/pay7.png";
+import pay8 from "../assets/pay8.png";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -12,11 +20,11 @@ const Footer = () => {
     <>
       <div className="w-full h-fit relative px-5 sm:px-10 md:px-20 m-auto footer pt-10">
         <div className="blurr"></div>
-        <div className="max-w-screen-xl py-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="max-w-screen-xl m-auto py-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5">
           <div className="">
             <img src={logo} alt="" className="w-32" />
             <p className="text-white font-normal text-lg tracking-wider mt-5">
-              Empowering Your Business with Seamless IT Solutions
+              Excellence in Business & Communication
             </p>
           </div>
           <div className="">
@@ -87,6 +95,16 @@ const Footer = () => {
               </p>
             </a>
           </div>
+        </div>
+        <div className="flex items-center flex-wrap justify-center relative mt-5 gap-10">
+          <img src={pay5} alt="" className="pay_card" />
+          <img src={pay6} alt="" className="pay_card" />
+          <img src={pay7} alt="" className="pay_card" />
+          <img src={pay8} alt="" className="pay_card" />
+          <img src={pay1} alt="" className="pay_card" />
+          <img src={pay2} alt="" className="pay_card" />
+          <img src={pay3} alt="" className="pay_card" />
+          <img src={pay4} alt="" className="pay_card" />
         </div>
         <div className="flex items-center justify-center relative p-5">
           <p className="text-white font-light text-center text-lg tracking-wider">

@@ -15,6 +15,8 @@ import Privecy from "./pages/Privecy";
 import Livechat from "./pages/Livechat";
 import Career from "./pages/Career";
 import logo from "../src/assets/logo.png";
+import Refund from "./pages/Refund";
+import Smallnav from "./components/Smallnav";
 
 const App = () => {
   const navbarRef = useRef(null);
@@ -42,6 +44,9 @@ const App = () => {
   return (
     <>
       <div className="w-full">
+        <div className="fixed top-28 left-0 Smallnav">
+          <Smallnav />
+        </div>
         <img
           src={logo}
           alt=""
@@ -49,7 +54,7 @@ const App = () => {
           onClick={() => navigate("")}
         />
         <div
-          className="menu fixed top-1 right-2 p-3 text-xl font-semibold rounded-full text-white cursor-pointer"
+          className="menu fixed top-1 right-2 p-2 text-3xl font-semibold rounded-lg text-white cursor-pointer"
           onClick={toggleNavbar}
         >
           {isOpen ? <RxCross2 /> : <AiOutlineMenuUnfold />}
@@ -83,6 +88,7 @@ const App = () => {
             <Route path="/upcoming" element={<Upcoming />} />
             <Route path="/privecy" element={<Privecy />} />
             <Route path="/career" element={<Career />} />
+            <Route path="/refound" element={<Refund />} />
           </Routes>
         </div>
         <Footer />

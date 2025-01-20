@@ -8,8 +8,10 @@ import image7 from "./project7.jpg";
 import image8 from "./project8.jpg";
 import image9 from "./project9.jpg";
 import image10 from "./project10.jpg";
+// website 0 - 9
 
 const demodata = [
+  // website demo
   {
     id: 1,
     name: "business",
@@ -70,6 +72,7 @@ const demodata = [
     description: "https://akashkhan0.github.io/Healthcalculator",
     image: image10,
   },
+  //
 ];
 
 export default demodata;

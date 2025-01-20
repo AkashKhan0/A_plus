@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaFacebookMessenger } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
+import chat from "../assets/chat.gif";
 
 const Livechat = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,14 +26,10 @@ const Livechat = () => {
   }, []);
 
   return (
-    <div className="chat-container">
+    <div className="chat-container" ref={livechatRef}>
       {/* Chat Button */}
-      <div
-        onClick={toggleChat}
-        ref={livechatRef}
-        className="chat-button text-xl sm:text-2xl"
-      >
-        💬
+      <div onClick={toggleChat} className="chat-button text-xl sm:text-2xl">
+        <img src={chat} alt="" className="w-11 rounded-lg border p-2" />
       </div>
 
       {/* Popup Chat Box */}

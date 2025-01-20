@@ -37,7 +37,7 @@ const Services = () => {
   return (
     <>
       <div className="w-full h-full text-white">
-        <div className="w-full flex flex-wrap items-center justify-center gap-5 my-5">
+        <div className="w-full flex flex-wrap items-center justify-center gap-5 mt-20 sm:mt-5 mb-5">
           <div className={`sub-menu relative `}>
             <Link to="/services">
               <div className={`sub-shap ${isActive("/services")}`}></div>
