@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import reviewData from "../assets/review";
-import "./Slider.css";
+import "./slider.css";
 import { useNavigate } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 
