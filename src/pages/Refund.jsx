@@ -10,8 +10,10 @@ import {
 import { VscDebugBreakpointLogUnverified } from "react-icons/vsc";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const Refund = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -151,6 +153,17 @@ const Refund = () => {
           <MdOutlineMail />
           <span>Email :</span> aplusadvertisinglimited@gmail.com
         </p>
+      </div>
+      {/* nine  */}
+      <div className="flex flex-col items-center justify-center my-20 text-white">
+        <p className="w-fit tspan text-2xl mb-10">
+          For any questions or concerns regarding this Privacy Policy, please
+          contact us
+        </p>
+
+        <div className="btn1 w-40">
+          <button onClick={() => navigate("/contact")}>contact</button>
+        </div>
       </div>
     </>
   );
