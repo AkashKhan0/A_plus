@@ -120,7 +120,7 @@ const Career = () => {
         ))}
       </div>
 
-      <div className="text-center mt-16 text-white">
+      <div className="text-center my-16 text-white">
         <p className="text-2xl mb-4">Ready to Apply?</p>
         <p>
           Send your CV and portfolio to :{" "}
@@ -129,10 +129,8 @@ const Career = () => {
           </span>
         </p>
       </div>
-
-      <div className="w-full py-10"></div>
       {/* nine  */}
-      <div className="flex flex-col items-center justify-center my-20 text-white">
+      <div className="flex flex-col items-center justify-center mb-20 text-white">
         <p className="w-fit tspan text-2xl mb-10">
           For any questions or concerns regarding this Privacy Policy, please
           contact us
