@@ -101,19 +101,18 @@ const Blog = () => {
           <div className="blog_box relative">
             <h1>Why SEO is important</h1>
             <p className=" text-justify">
-              className=" text-justify" Today, SEO (Search Engine Optimization)
-              is almost synonymous with online success. It may be about ranking
-              higher on search engines, but even more so it is about being found
-              by your audience at just the right time. An optimized website
-              generates quality traffic but also builds trust and offers
-              enhanced user experience for all. SEO gets your content what it
-              deserves-the cutting edge over competition and a stream of loyal
-              customers. Whether you're a business, blogger, or brand, SEO will
-              take you to that beautiful place called international audience,
-              credibility, and sustainable growth. All this and online
-              visibility being the life wire these days, one might ask, 'who
-              needs SEO?' 'who doesn't need it?' in fact-it's as important as
-              that.
+              Today, SEO (Search Engine Optimization) is almost synonymous with
+              online success. It may be about ranking higher on search engines,
+              but even more so it is about being found by your audience at just
+              the right time. An optimized website generates quality traffic but
+              also builds trust and offers enhanced user experience for all. SEO
+              gets your content what it deserves-the cutting edge over
+              competition and a stream of loyal customers. Whether you're a
+              business, blogger, or brand, SEO will take you to that beautiful
+              place called international audience, credibility, and sustainable
+              growth. All this and online visibility being the life wire these
+              days, one might ask, 'who needs SEO?' 'who doesn't need it?' in
+              fact-it's as important as that.
             </p>
             <span className="right_arrow"></span>
           </div>
