@@ -107,10 +107,10 @@ const Navbar = ({ toggleNavbar }) => {
                   "/services/tech"
                 )}`}
               >
-                <Link to="/services/tech" onClick={toggleNavbar}>
+                <Link to="/services/photoshoot" onClick={toggleNavbar}>
                   <p className="flex items-center gap-3">
                     <MdOutlineSupportAgent />
-                    tech support
+                    photoshoot
                   </p>
                 </Link>
               </div>
