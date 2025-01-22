@@ -9,6 +9,7 @@ import {
   FaBullhorn,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import serbg from "../assets/re_bg.jpg";
 
 const Career = () => {
   const navigate = useNavigate();
@@ -94,7 +95,9 @@ const Career = () => {
   ];
   return (
     <>
-      <div className="re_bg"></div>
+      <div className="con_bg">
+        <img src={serbg} alt="" />
+      </div>
       <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto my-10">
         we are hiring
         <span className="w-1/2 h-1 bg-red-600 absolute left-0 -bottom-3 rounded-full"></span>

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import teamData from "../assets/teammate";
 import { useNavigate } from "react-router-dom";
+import contbg from "../assets/con_bg.jpg";
 
 const About = () => {
   const navigate = useNavigate();
@@ -9,7 +10,9 @@ const About = () => {
   }, []);
   return (
     <>
-      <div className="con_bg"></div>
+      <div className="con_bg">
+        <img src={contbg} alt="" />
+      </div>
       <div className="w-full h-full py-10 relative text-white">
         <div className="w-full h-fit text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto mb-20">

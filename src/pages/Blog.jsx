@@ -6,6 +6,7 @@ import gif4 from "../assets/zif4.png";
 import gif5 from "../assets/zif5.gif";
 import gif6 from "../assets/zif6.png";
 import { useNavigate } from "react-router-dom";
+import serbg from "../assets/con_bg.jpg";
 
 const Blog = () => {
   const navigate = useNavigate();
@@ -14,7 +15,9 @@ const Blog = () => {
   }, []);
   return (
     <>
-      <div className="con_bg"></div>
+      <div className="con_bg">
+        <img src={serbg} alt="" />
+      </div>
       <div className="w-full h-full py-10 relative text-slate-300">
         <div className="w-full h-fit text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto mb-20">

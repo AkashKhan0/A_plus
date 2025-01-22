@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { FaPhone, FaMessage } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
+import serbg from "../assets/con_bg.jpg";
 import {
   FaFacebookF,
   FaInstagram,
@@ -53,7 +54,9 @@ const Contact = () => {
 
   return (
     <>
-      <div className="con_bg"></div>
+      <div className="con_bg">
+        <img src={serbg} alt="" />
+      </div>
       <div className="w-full h-fit my-10 text-center">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto">
           contact

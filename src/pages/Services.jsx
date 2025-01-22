@@ -5,6 +5,7 @@ import Uiux from "./Uiux";
 import Smm from "./Smm";
 import Tech from "./Tech";
 import Animation from "./Animation";
+import serbg from "../assets/ser.jpg";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -36,6 +37,9 @@ const Services = () => {
 
   return (
     <>
+      <div className="con_bg">
+        <img src={serbg} alt="" />
+      </div>
       <div className="w-full h-full text-white">
         <div className="w-full flex flex-wrap items-center justify-center gap-5 mt-20 sm:mt-5 mb-5">
           <div className={`sub-menu relative `}>

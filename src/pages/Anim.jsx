@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import serbg from "../assets/ser.jpg";
 
 const Anim = () => {
   const navigate = useNavigate();
@@ -8,7 +9,9 @@ const Anim = () => {
   }, []);
   return (
     <>
-      <div className="about-bg"></div>
+      <div className="con_bg">
+        <img src={serbg} alt="" />
+      </div>
       <div className="w-full h-fit text-center my-10 text-white">
         <div className="relative w-full h-24 flex items-center justify-center">
           <h1 className="anim text-3xl sm:text-5xl md:text-8xl">animation</h1>

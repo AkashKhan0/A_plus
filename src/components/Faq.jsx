@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import faqData from "../assets/faq";
 import { FaAngleRight, FaAngleDown } from "react-icons/fa";
 import { BsPatchQuestionFill } from "react-icons/bs";
+import homebg from "../assets/home_bg.jpg";
 
 const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -11,7 +12,9 @@ const Faq = () => {
   };
   return (
     <>
-      <div className="faq-bg"></div>
+      <div className="con_bg">
+        <img src={homebg} alt="" />
+      </div>
       <div className="flex flex-col gap-5 my-20 w-full h-auto relative">
         <div className="flex-1 flex flex-col faq w-full h-full">
           <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit mb-10">

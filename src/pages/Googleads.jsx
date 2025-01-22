@@ -2,12 +2,17 @@ import React, { useEffect } from "react";
 import { FaHandPointRight } from "react-icons/fa";
 import marketingData from "../assets/marketing";
 
+import serbg from "../assets/ser.jpg";
+
 const Googleads = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <>
+      <div className="con_bg">
+        <img src={serbg} alt="" />
+      </div>
       <div className="ser-bg"></div>
       <div className="w-full h-fit text-center my-10 relative text-white">
         <h1 className="text-2xl sm:text-3xl md:text-4xl uppercase font-semibold relative w-fit m-auto mb-10">

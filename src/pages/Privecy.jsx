@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
 import { useNavigate } from "react-router-dom";
+import serbg from "../assets/pvc.jpg";
 
 const Privecy = () => {
   const navigate = useNavigate();
@@ -10,7 +11,9 @@ const Privecy = () => {
   }, []);
   return (
     <>
-      <div className="pvc_bg"></div>
+      <div className="con_bg">
+        <img src={serbg} alt="" />
+      </div>
       <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto mt-10">
         privecy policy
         <span className="w-1/2 h-1 bg-red-600 absolute left-0 -bottom-3 rounded-full"></span>

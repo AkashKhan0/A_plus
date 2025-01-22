@@ -9,7 +9,6 @@ const Smm = () => {
   }, []);
   return (
     <>
-      <div className="ser-bg"></div>
       <div className="w-full h-fit text-center my-20">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto mb-10">
           Social Media Marketing

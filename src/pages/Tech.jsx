@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import dataList from "../assets/services";
+import serbg from "../assets/ser.jpg";
 const selectedItems = [dataList[9]];
 const Tech = () => {
   useEffect(() => {
@@ -7,6 +8,9 @@ const Tech = () => {
   }, []);
   return (
     <>
+      <div className="con_bg">
+        <img src={serbg} alt="" />
+      </div>
       <div className="ser-bg"></div>
       <div className="w-full h-fit text-center mt-20">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto mb-10">

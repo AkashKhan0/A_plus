@@ -488,13 +488,7 @@ button {
   backdrop-filter: blur(30px);
 }
 .blurr,
-.faq-bg,
-.ser-bg,
-.u_bg,
-.pvc_bg,
-.pro_bg,
-.re_bg,
-.con_bg {
+.con_bg img {
   position: fixed;
   top: 0;
   left: 0;
@@ -512,27 +506,6 @@ b {
 }
 .blurr {
   background-image: url("./footer.png");
-}
-.faq-bg {
-  background-image: url("./home_bg.jpg");
-}
-.ser-bg {
-  background-image: url("./ser.jpg");
-}
-.con_bg {
-  background-image: url("./con_bg.jpg");
-}
-.u_bg {
-  background-image: url("./u_bg.jpg");
-}
-.pvc_bg {
-  background-image: url("./pvc.jpg");
-}
-.pro_bg {
-  background-image: url("./pro_bg.jpg");
-}
-.re_bg {
-  background-image: url("./re_bg.jpg");
 }
 
 @media (max-width: 788px) {
