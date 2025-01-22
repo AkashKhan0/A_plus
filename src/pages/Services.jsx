@@ -72,7 +72,7 @@ const Services = () => {
                   isActive("/services/smm") ? "clr" : "wt"
                 }`}
               >
-                social marketing
+                social media
               </button>
             </Link>
           </div>

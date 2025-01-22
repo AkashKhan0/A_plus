@@ -54,7 +54,7 @@ const App = () => {
         <img
           src={logo}
           alt=""
-          className="fixed top-2 left-4 w-24 cursor-pointer on_logo"
+          className="fixed top-2 left-4 w-12 sm:w-12 md:w-20 cursor-pointer on_logo"
           onClick={() => navigate("")}
         />
         <div
