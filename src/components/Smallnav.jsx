@@ -33,14 +33,6 @@ const Smallnav = () => {
             <div className="name_sm_nav">home</div>
           </div>
         </Link>
-        <Link to="/about">
-          <div className="flex items-center text-white text-base small_items">
-            <div className="icon_sm_nav">
-              <FaUser />
-            </div>
-            <div className="name_sm_nav">about</div>
-          </div>
-        </Link>
         <Link to="/services">
           <div className="flex items-center text-white text-base small_items">
             <div className="icon_sm_nav">
@@ -55,6 +47,14 @@ const Smallnav = () => {
               <IoCall />
             </div>
             <div className="name_sm_nav">contact</div>
+          </div>
+        </Link>
+        <Link to="/about">
+          <div className="flex items-center text-white text-base small_items">
+            <div className="icon_sm_nav">
+              <FaUser />
+            </div>
+            <div className="name_sm_nav">about</div>
           </div>
         </Link>
         <Link to="/blog">
