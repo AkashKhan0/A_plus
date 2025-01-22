@@ -167,7 +167,8 @@ button {
   color: #eee;
   border: 1px solid #ff0018;
 }
-.cat {
+
+:-webkit-any(.cat) {
   z-index: -1;
   bottom: 5px;
   height: 0px;
