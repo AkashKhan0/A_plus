@@ -95,7 +95,15 @@ const Seo = () => {
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
         {dataList.slice(1, 4).map((item, index) => (
           <div key={index} className="w-full h-full flex flex-col">
-            <div className="seo_package flex flex-col h-full">
+            <div
+              className="seo_package flex flex-col h-full"
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+              style={{
+                "--x": mousePosition.x,
+                "--y": mousePosition.y,
+              }}
+            >
               <h1 className="text-xl sm:text-2xl text-center font-semibold mb-10">
                 {item.title}
               </h1>
@@ -132,7 +140,15 @@ const Seo = () => {
             className="w-full sm:w-3/4 md:w-1/2 h-full flex flex-col justify-center"
             onClick={() => navigate(item.link)}
           >
-            <div className="seo_package flex flex-col h-full">
+            <div
+              className="seo_package flex flex-col h-full"
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+              style={{
+                "--x": mousePosition.x,
+                "--y": mousePosition.y,
+              }}
+            >
               <h1 className="text-xl sm:text-2xl text-center capitalize font-semibold mb-10">
                 {item.title}
               </h1>
