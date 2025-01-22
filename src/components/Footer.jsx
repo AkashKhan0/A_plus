@@ -14,6 +14,12 @@ import pay6 from "../assets/pay6.jpg";
 import pay7 from "../assets/pay7.png";
 import pay8 from "../assets/pay8.png";
 import homebg from "../assets/footer.png";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -101,6 +107,34 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
+        <div className="flex items-center justify-center gap-5 flex-wrap my-10">
+          <a
+            href="https://facebook.com/profile.php?id=61571925213316"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookF className="fc-icon" />
+          </a>
+          <FaInstagram className="fc-icon" />
+          <FaLinkedinIn className="fc-icon" />
+
+          <a
+            href="https://youtube.com/@aplusadvertisinglimited?si=KDDTEGQiRkybXVkQ"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaYoutube className="fc-icon" />
+          </a>
+          <a
+            href="https://wa.me/8801850219432?text=Hi!%20I%20need%20assistance"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaWhatsapp className="fc-icon" />
+          </a>
+        </div>
+
         <div className="flex items-center flex-wrap justify-center relative mt-5 gap-10">
           <img src={pay5} alt="" className="pay_card" />
           <img src={pay6} alt="" className="pay_card" />

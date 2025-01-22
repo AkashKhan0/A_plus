@@ -1,5 +1,5 @@
 const marketingData = [
-  // google ads data list 0-4
+  // google ads data list 0-3
   {
     package: "PACKAGE : 1",
     price: "50 $",
@@ -41,7 +41,7 @@ const marketingData = [
     ],
   },
 
-  // data for facebook marketing 4-7
+  // data for facebook marketing 3-6
   {
     package: "PACKAGE : 1",
     price: "100 $",
@@ -88,6 +88,87 @@ const marketingData = [
       "Management 7 days",
       "Pixels set up",
       "CAPI SET UP",
+    ],
+  },
+  // for website packages 7-12
+  {
+    package: "Basic Package",
+    package_for: "Personal/Portfolio Website",
+    ideal: "Freelancers, bloggers, personal portfolios",
+    features: "Features",
+    price: "$500 - $800",
+    description: [
+      "Up to 5 pages (Home, About, Blog, Contact, etc.)",
+      "Responsive design for mobile and desktop",
+      "Basic SEO optimization",
+      "Social media integration",
+      "3 months of post-launch support",
+      "Up to 10 revisions",
+    ],
+  },
+  {
+    package: "Standard Package",
+    package_for: "Small Business Website",
+    ideal: "Local businesses, startups",
+    features: "Features",
+    price: "$1,200 - $2,000",
+    description: [
+      "Up to 10 pages",
+      "Custom design tailored to the brand",
+      "Basic e-commerce functionality (up to 20 products)",
+      "SEO and analytics setup",
+      "Social media and contact form integration",
+      "3 months of post-launch support",
+      "Up to 10 revisions",
+    ],
+  },
+  {
+    package: "Advanced Package",
+    package_for: "E-commerce Website",
+    ideal: "Online stores, retail businesses",
+    features: "Features",
+    price: "$2,500 - $5,000",
+    description: [
+      "Custom ecommerce design with payment gateway integration",
+      "Up to 50 product listings",
+      "Inventory management system",
+      "SEO optimization and analytics tracking",
+      "Newsletter and promotional email integration",
+      "3 months of post-launch support",
+      "Up to 10 revisions",
+    ],
+  },
+  {
+    package: "Premium Package",
+    package_for: "Corporate Website",
+    ideal: "Enterprises, agencies, professional organizations",
+    features: "Features",
+    price: "$3,000 - $7,000",
+    description: [
+      "Up to 20+ pages",
+      "Advanced custom design with animations",
+      "Content management system (CMS)",
+      "SEO, analytics, and lead generation tools",
+      "Multi-language support (if required)",
+      "Social media integration and blog setup",
+      "3 months of post-launch support",
+      "Up to 10 revisions",
+    ],
+  },
+  {
+    package: "Custom Package",
+    package_for: "High-End or Niche Websites",
+    ideal:
+      "Unique needs like SaaS platforms, community platforms, or other custom solutions",
+    features: "Features",
+    price: "$8,000+",
+    description: [
+      "Fully tailored design and development",
+      "Complex functionalities (e.g., membership systems, custom dashboards)",
+      "Integration with APIs or third-party tools",
+      "Advanced security measures",
+      "3 months of post-launch support",
+      "Up to 10 revisions",
     ],
   },
 ];

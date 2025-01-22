@@ -55,17 +55,6 @@ const Navbar = ({ toggleNavbar }) => {
               </p>
             </Link>
           </div>
-
-          {/* menu items */}
-          <div className={`list duration-200 px-2 ${isActive("/about")}`}>
-            <Link to="/about" onClick={toggleNavbar}>
-              <p className="flex items-center gap-3">
-                <FaUser />
-                about
-              </p>
-            </Link>
-          </div>
-
           {/* menu items */}
           <div
             className={`list duration-200 px-2 cursor-pointer`}
@@ -151,6 +140,16 @@ const Navbar = ({ toggleNavbar }) => {
           </div>
 
           {/* menu items */}
+          <div className={`list duration-200 px-2 ${isActive("/about")}`}>
+            <Link to="/about" onClick={toggleNavbar}>
+              <p className="flex items-center gap-3">
+                <FaUser />
+                about
+              </p>
+            </Link>
+          </div>
+
+          {/* menu items */}
           <div className={`list duration-200 px-2 ${isActive("/blog")}`}>
             <Link to="/blog" onClick={toggleNavbar}>
               <p className="flex items-center gap-3">
@@ -182,7 +181,13 @@ const Navbar = ({ toggleNavbar }) => {
         </div>
         <div className="social flex items-center justify-center gap-5 flex-wrap w-full">
           <div className="navFoot">
-            <FaFacebook className="icons" />
+            <a
+              href="https://facebook.com/profile.php?id=61571925213316"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaFacebook className="icons" />
+            </a>
             <div className="name">Facebook</div>
             <div className="shap"></div>
           </div>
@@ -208,7 +213,13 @@ const Navbar = ({ toggleNavbar }) => {
             <div className="shap"></div>
           </div>
           <div className="navFoot">
-            <FaYoutube className="icons" />
+            <a
+              href="https://youtube.com/@aplusadvertisinglimited?si=KDDTEGQiRkybXVkQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube className="icons" />
+            </a>
             <div className="name">Youtube</div>
             <div className="shap"></div>
           </div>

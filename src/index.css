@@ -195,7 +195,7 @@ button {
 }
 .social {
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
   left: 0;
 }
 .navFoot {
@@ -520,7 +520,7 @@ button {
 }
 .f-list {
   color: #eee;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   margin: 8px 0px;
   cursor: pointer;
@@ -1447,10 +1447,34 @@ select option:hover {
 .seo_package {
   background-color: transparent;
   backdrop-filter: blur(20px);
-  border: 1px solid #0077ff29;
+  box-shadow: 0 0 10px #ffffff1c;
   padding: 20px;
   cursor: pointer;
   position: relative;
+  transition: all o.3s ease;
+}
+.seo_package::before {
+  content: "";
+  position: absolute;
+  top: var(--y, 50%);
+  left: var(--x, 50%);
+  width: 1px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.208);
+  border-radius: 50%;
+  backdrop-filter: blur(30px);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 100px 30px rgba(255, 255, 255, 0.652);
+  opacity: 0;
+}
+
+.seo_package:hover::before {
+  opacity: 1;
+}
+.seo_package:hover {
+  margin-top: -20px;
+  box-shadow: 0 0 10px #ffffff26, 0 0 10px inset #ffffff24;
 }
 .delivery,
 .price {
@@ -1458,14 +1482,16 @@ select option:hover {
   text-align: center;
   padding: 5px 20px;
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: capitalize;
   border-radius: 5px;
 }
-.delivery {
+.delivery,
+.delivery_web {
   background-color: #9719034e;
 }
-.price {
+.price,
+.price_web {
   background-color: #03a8f413;
 }

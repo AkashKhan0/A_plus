@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import dataList from "../assets/services";
 import { FaHandPointRight } from "react-icons/fa";
 import serbg from "../assets/ser.jpg";
@@ -9,6 +9,19 @@ const Seo = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  const [mousePosition, setMousePosition] = useState({ x: "50%", y: "50%" });
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    setMousePosition({ x: `${x}px`, y: `${y}px` });
+  };
+
+  const handleMouseLeave = () => {
+    setMousePosition({ x: "50%", y: "50%" });
+  };
   return (
     <>
       <div className="con_bg">
@@ -42,7 +55,15 @@ const Seo = () => {
             key={index}
             className="w-full sm:w-3/4 md:w-1/2 h-full flex flex-col justify-center"
           >
-            <div className="seo_package flex flex-col h-full">
+            <div
+              className="seo_package flex flex-col h-full"
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+              style={{
+                "--x": mousePosition.x,
+                "--y": mousePosition.y,
+              }}
+            >
               <h1 className="text-xl sm:text-2xl text-center font-semibold mb-10">
                 {item.title}
               </h1>
