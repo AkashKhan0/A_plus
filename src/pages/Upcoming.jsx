@@ -49,14 +49,6 @@ const Upcoming = () => {
               masterpieces!
             </p>
           </div>
-          <div className="u_card1 u_box w-full">
-            <FaCameraRetro className="u_icon" />
-            <h1 className="u_title">Photoshoot</h1>
-            <p className="u_description">
-              Composed, soon joining you for capturing all this moment through
-              mindblowing professional photo shoots.
-            </p>
-          </div>
           <div className="u_card2 u_box w-full">
             <RiImageEditFill className="u_icon" />
             <h1 className="u_title">graphics design</h1>
