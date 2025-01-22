@@ -17,7 +17,7 @@ const Tech = () => {
           Photoshoot
           <span className="w-1/2 h-1 bg-red-600 absolute left-0 -bottom-3 rounded-full"></span>
         </h1>
-        <p className="my-10 text-justify">
+        <p className="my-10 text-justify text-lg">
           Your events deserve more than just photos—they deserve stories told
           through timeless images. Our professional photography service is here
           to cover all kinds of events, from magical weddings and joyful

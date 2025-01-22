@@ -28,7 +28,7 @@ const Upcoming = () => {
               <div class="bottom"></div>
             </div>
           </div>
-          <p className="my-10 text-justify">
+          <p className="my-10 text-justify text-lg">
             Our forthcoming preparations are all set to lift your existing views
             even higher! Whether you require stunning photography captured for
             capturing moments or transforming raw footage into cinematic

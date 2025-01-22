@@ -20,7 +20,7 @@ const Uiux = () => {
           <span className="w-1/2 h-1 bg-red-600 absolute left-0 -bottom-3 rounded-full"></span>
         </h1>
 
-        <p className="my-10 text-justify">
+        <p className="my-10 text-justify text-lg">
           Your website is more than just a digital presence; it's that first
           look your audience sees of your brand. Our professional UI/UX design
           services are all about making visually stunning, user-friendly, and

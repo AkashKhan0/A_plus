@@ -32,7 +32,7 @@ const Seo = () => {
           Search Engine Optimization
           <span className="w-1/2 h-1 bg-red-600 absolute left-0 -bottom-3 rounded-full"></span>
         </h1>
-        <p className="my-10 text-justify">
+        <p className="my-10 text-justify text-lg">
           In visibility lies everything in today's digital era. Our expert
           Search Engine Optimization services are designed to put your business
           in front of the right audience. From targeted keyword research and

@@ -14,7 +14,7 @@ const Smm = () => {
           Social Media Marketing
           <span className="w-1/2 h-1 bg-red-600 absolute left-0 -bottom-3 rounded-full"></span>
         </h1>
-        <p className="my-10 text-justify">
+        <p className="my-10 text-justify text-lg">
           We provide expert marketing solutions tailored to your needs: Facebook
           & Social Media Marketing : Connect with your targeted audience by
           engaging them in highly targeted campaigns, appealing content, and ad
