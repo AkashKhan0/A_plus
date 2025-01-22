@@ -14,7 +14,7 @@
   backdrop-filter: blur(20px);
   padding: 5px;
   transition: 0.5s;
-  left: calc(50% - 110px);
+  left: calc(50% - 90px);
   top: 0;
   text-align: center;
 }
@@ -22,11 +22,15 @@
   position: absolute;
   right: 0px;
   top: 1%;
+  z-index: 777;
+  pointer-events: auto;
 }
 #prevt {
   position: absolute;
   left: 0px;
   top: 1%;
+  z-index: 777;
+  pointer-events: auto;
 }
 #prevt,
 #nextt {

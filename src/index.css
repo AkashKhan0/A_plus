@@ -16,6 +16,10 @@
 body {
   background-color: black;
 }
+::selection {
+  background-color: #25d3651a;
+  color: #ff0000;
+}
 h1 {
   letter-spacing: 1px;
 }
@@ -132,12 +136,13 @@ button {
   background-color: #ffffff13;
 }
 
-:-webkit-any(.btn1) {
+.btn1 {
   letter-spacing: 2px;
   border: 1px solid #ffffff20;
   transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   z-index: 777;
+  pointer-events: auto;
 }
 .btn1:hover {
   border: 1px solid #ff001900;
@@ -162,18 +167,22 @@ button {
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  z-index: 777;
+  pointer-events: auto;
 }
 .seeall:hover {
   color: #eee;
   border: 1px solid #ff0018;
 }
 
-:-webkit-any(.cat) {
+.cat {
   z-index: -1;
   bottom: 5px;
   height: 0px;
   opacity: 0;
   transition: all 0.3s;
+  z-index: 777;
+  pointer-events: auto;
 }
 .hover-me {
   transition: all 0.3s;
