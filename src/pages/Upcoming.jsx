@@ -12,9 +12,8 @@ const Upcoming = () => {
   }, []);
   return (
     <>
+      <div className="u_bg"></div>
       <div className="w-full h-full py-10 relative text-white">
-        <div className="u_bg"></div>
-
         <div className="w-full h-fit text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto mb-20">
             Upcoming

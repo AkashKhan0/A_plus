@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
 import dataList from "../assets/services";
+import { useNavigate } from "react-router-dom";
 
 const Smm = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -29,17 +31,20 @@ const Smm = () => {
       </div>
 
       {/* services card */}
-      <div className="w-full h-fit flex flex-wrap justify-center gap-5 mb-24">
-        {dataList.slice(4, 9).map((item, index) => (
+      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-items-center gap-5 mb-24">
+        {dataList.slice(7, 9).map((item, index) => (
           <div
             key={index}
-            className="w-full sm:w-1/2 md:w-1/4 min-w-60 h-80 ser__card"
+            className="w-full h-80 ser__card"
+            onClick={() => navigate(item.link)}
           >
             <div className="front">
               <img src={item.image} alt="" className="" />
 
               <h1 className="card-h1 text-3xl font-semibold">{item.title}</h1>
-              <p className="card-p py-2 text-center px-3">{item.description}</p>
+              <p className="card-p py-2 text-lg text-center px-3">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}

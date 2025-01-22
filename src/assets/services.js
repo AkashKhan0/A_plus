@@ -1,23 +1,13 @@
-// seo data file
-import ecomSeo from "./ecomseo.webp";
-import offpageSeo from "./offpageseo.webp";
-import onpageSeo from "./onpageseo.webp";
-import techSeo from "./techseo.webp";
 // marketing data file
-import facebookM from "./facebookm.webp";
 import googleAds from "./googleads.webp";
-import youtubeM from "./youtubem.webp";
 import socialMarketing from "./socialmarketing.webp";
-import tiktok from "./tiktok.webp";
 
-// animation services
+// tech support
+import techSupport from "./techsupport.webp";
 
 // website file list
 import startup from "./startup.webp";
 import subscription from "./subscription.webp";
-import techSupport from "./techsupport.webp";
-import seo from "./seo.jpg";
-import uiux from "./uiux.jpg";
 import blog from "./blog.webp";
 import booking from "./booking.webp";
 import businessWeb from "./businessweb.webp";
@@ -43,7 +33,7 @@ import school from "./school.webp";
 import travel from "./travel.webp";
 import wedding from "./wedding.webp";
 
-// animation
+// animation services
 import anim1 from "./anim1.gif";
 import anim2 from "./anim2.gif";
 import anim3 from "./anim3.gif";
@@ -51,75 +41,126 @@ import anim4 from "./anim4.gif";
 import anim5 from "./anim5.gif";
 
 const dataList = [
-  // seo data list 0-4
+  // seo data list 0-7
   {
-    image: ecomSeo,
     title: "E-commerce SEO",
-    description:
-      "Boost your online store's visibility with tailored e-commerce SEO strategies for better search rankings and increased sales.",
-    link: "https://example.com/ecom-seo",
+    description: ["Etsy", "Ebay", "Shopify", "Wix", "Wordpress"],
+    delivery: "10 days",
+    price: "$ negotiable",
   },
   {
-    image: offpageSeo,
+    title: "Etsy",
+    description: [
+      "Etsy Shop Audit",
+      "Keyword Research",
+      "Competitor Research",
+      "Optimized Title",
+      "Optimized Product Description",
+      "13 Tags Per Product",
+    ],
+    delivery: "10 days",
+    price: "$ negotiable",
+  },
+  {
+    title: "Ebay",
+    description: [
+      "Shop Audit",
+      "Keyword Research",
+      "Competitor Research",
+      "SEO Optimized Title",
+      "Product Description",
+      "Meta Keywords",
+      "Google Meta Description",
+      "Image Alt Tags",
+      "Setup Template",
+      "Product Variation",
+      "Ebay HTML Template Design",
+      "Mobile Responsive",
+    ],
+    delivery: "10 days",
+    price: "$ negotiable",
+  },
+  {
+    title: "Shopify/ wix/ wordpress",
+    description: [
+      "Keyword Research",
+      "Competitor Research",
+      "SEO Optimized Title",
+      "Product Description",
+      "Meta Keywords",
+      "Google Meta Description",
+      "Image Alt Tags",
+    ],
+    delivery: "10 days",
+    price: "$ negotiable",
+  },
+  {
     title: "Off-Page SEO",
-    description:
-      "Strengthen your website’s authority with off-page SEO techniques like backlinks, social shares, and external optimizations.",
-    link: "https://example.com/offpage-seo",
+    description: [
+      "Backlink Building",
+      "Guest Blogging",
+      "Social Media Marketing",
+      "Influencer Marketing",
+      "Forum Engagement",
+      "Brand Mentions",
+      "Content Marketing",
+      "Directory Listings",
+      "Press Releases",
+      "Local SEO",
+    ],
+    delivery: "10 days",
+    price: "$ 100 ",
   },
   {
-    image: onpageSeo,
     title: "On-Page SEO",
-    description:
-      "Optimize your website content, tags, and structure to improve rankings and user experience effectively.",
-    link: "https://example.com/onpage-seo",
+    description: [
+      "Keyword Research",
+      "Title Tag Optimization",
+      "Meta Descriptions",
+      "URL Structure",
+      "Header Tags",
+      "Image Optimization",
+      "Internal Linking",
+      "Content Optimization",
+    ],
+    delivery: "10 days",
+    price: "$ 100 ",
   },
   {
-    image: techSeo,
     title: "Tech SEO",
-    description:
-      "Enhance your website's performance and visibility with advanced technical SEO optimizations and audits.",
-    link: "https://example.com/tech-seo",
+    description: [
+      "Site Speed Optimization",
+      "Mobile-Friendliness",
+      "SSL Installation",
+      "XML Sitemap",
+      "Robots.txt Optimization",
+      "Fixing Crawl Errors",
+      "Structured Data Markup",
+      "Canonical Tags",
+      "404 Error Fixes",
+    ],
+    delivery: "10 days",
+    price: "$ 100 ",
   },
 
-  // marketing data list 5-8/9
+  // marketing data list 7-9
 
-  {
-    image: facebookM,
-    title: "Facebook Marketing",
-    description:
-      "Create strategies for Facebook campaigns to improve brand awareness, engagement, and lead generation through targeted advertising.",
-    link: "https://example.com/facebook-marketing",
-  },
   {
     image: googleAds,
     title: "Google Ads",
     description:
       "Run impactful Google Ads campaigns to maximize reach, traffic, and conversions for your business or services.",
-    link: "https://example.com/google-ads",
-  },
-  {
-    image: youtubeM,
-    title: "YouTube Marketing",
-    description:
-      "Create YouTube marketing strategies to grow your audience and boost engagement with quality content.",
-    link: "https://example.com/youtube-marketing",
+    link: "/services/googleads",
   },
   {
     image: socialMarketing,
     title: "Social Media Marketing",
     description:
       "Promote your business with strategic social media campaigns to engage audiences and build your online presence.",
-    link: "https://example.com/social-marketing",
-  },
-  {
-    image: tiktok,
-    title: "Tiktok Marketing",
-    description:
-      "Promote your business with strategic tiktok campaigns to engage audiences and build your online presence.",
-    link: "https://example.com/social-marketing",
+    link: "/services/socialmarketing",
   },
 
-  // main sub start
+  // main sub start  6-6
   {
     image: techSupport,
     title: "Tech Support",
@@ -128,23 +169,7 @@ const dataList = [
     link: "https://example.com/tech-support",
   },
 
-  {
-    image: seo,
-    title: "Search Engine Optimization",
-    description:
-      "Improve your website's visibility and rankings on search engines with advanced optimization techniques for better traffic.",
-    link: "https://example.com/search-engine-optimization",
-  },
-  {
-    image: uiux,
-    title: "Website Making UI/UX",
-    description:
-      "Design and build user-friendly websites with intuitive UI/UX that deliver seamless navigation and enhanced user engagement.",
-    link: "https://example.com/website-making-ui-ux",
-  },
-  // main sub end
-
-  // website data list
+  // website data list 7-33
   {
     image: startup,
     title: "Startup",
@@ -329,41 +354,41 @@ const dataList = [
     link: "https://example.com/wedding",
   },
 
-  // animation services
+  // animation services 34-
   {
     image: anim1,
     title: "Comic Animations",
     description:
       "Captivating visuals, vibrant stories, and endless imagination come alive!",
-    link: "https://example.com/wedding",
+    link: "/services/animation/anim",
   },
   {
     image: anim2,
     title: "Motion Graphics",
     description:
       "Dynamic visuals that captivate, engage, and elevate your brand's story",
-    link: "https://example.com/wedding",
+    link: "/services/animation/anim",
   },
   {
     image: anim3,
     title: "Explainer Videos",
     description:
       "Engage, educate, and captivate with dynamic, custom-crafted explainer videos!",
-    link: "https://example.com/wedding",
+    link: "/services/animation/anim",
   },
   {
     image: anim4,
     title: "Custom Animation",
     description:
       "Transform ideas into captivating visuals with tailored, high-impact animations!",
-    link: "https://example.com/wedding",
+    link: "/services/animation/anim",
   },
   {
     image: anim5,
     title: "Animated Website",
     description:
       "Captivate users with dynamic, visually stunning, and interactive animated websites!",
-    link: "https://example.com/wedding",
+    link: "/services/animation/anim",
   },
 ];
 

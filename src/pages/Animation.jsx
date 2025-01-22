@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import dataList from "../assets/services";
+import { useNavigate } from "react-router-dom";
+
 const Animation = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -43,11 +46,12 @@ const Animation = () => {
       </div>
 
       {/* services card */}
-      <div className="w-full h-fit flex flex-wrap justify-center gap-5 mb-24">
-        {dataList.slice(38, 43).map((item, index) => (
+      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
+        {dataList.slice(36, 41).map((item, index) => (
           <div
             key={index}
-            className="w-full sm:w-1/2 md:w-1/4 min-w-60 h-80 ser__card"
+            className="w-full h-80 ser__card"
+            onClick={() => navigate(item.link)}
           >
             <div className="front">
               <img src={item.image} alt="" className="" />

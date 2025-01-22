@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import dataList from "../assets/services";
-const selectedItems = [dataList[3], dataList[5], dataList[9]];
+const selectedItems = [dataList[9]];
 const Tech = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -28,17 +28,16 @@ const Tech = () => {
       </div>
 
       {/* services card */}
-      <div className="w-full h-fit flex flex-wrap justify-center gap-5 mb-24">
+      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-items-center gap-5 mb-24">
         {selectedItems.map((item, index) => (
-          <div
-            key={index}
-            className="w-full sm:w-1/2 md:w-1/4 min-w-60 h-80 ser__card"
-          >
+          <div key={index} className="w-full h-80 ser__card">
             <div className="front">
               <img src={item.image} alt="" className="" />
 
               <h1 className="card-h1 text-3xl font-semibold">{item.title}</h1>
-              <p className="card-p py-2 text-center px-3">{item.description}</p>
+              <p className="card-p py-2 text-lg text-center px-3">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}

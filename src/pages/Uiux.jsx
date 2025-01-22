@@ -31,12 +31,9 @@ const Uiux = () => {
       </div>
 
       {/* services card */}
-      <div className="w-full h-fit flex flex-wrap justify-center gap-5 mb-24">
-        {dataList.slice(12, 38).map((item, index) => (
-          <div
-            key={index}
-            className="w-full sm:w-1/2 md:w-1/4 min-w-60 h-80 ser__card"
-          >
+      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
+        {dataList.slice(10, 36).map((item, index) => (
+          <div key={index} className="w-full h-80 ser__card">
             <div className="front">
               <img src={item.image} alt="" className="" />
 

@@ -489,9 +489,7 @@ button {
 }
 .blurr,
 .faq-bg,
-.about-bg,
 .ser-bg,
-.blog-bg,
 .u_bg,
 .pvc_bg,
 .pro_bg,
@@ -518,17 +516,11 @@ b {
 .faq-bg {
   background-image: url("./home_bg.jpg");
 }
-.about-bg {
-  background-image: url("./about.jpg");
-}
 .ser-bg {
   background-image: url("./ser.jpg");
 }
 .con_bg {
   background-image: url("./con_bg.jpg");
-}
-.blog-bg {
-  background-image: url("./blog.jpg");
 }
 .u_bg {
   background-image: url("./u_bg.jpg");
@@ -1341,4 +1333,99 @@ select {
 }
 select option:hover {
   background-color: #971903;
+}
+
+.anim {
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+  position: absolute;
+}
+.anim:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 1px #03a9f4;
+}
+.anim:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate {
+  0% {
+    clip-path: polygon(
+      0 45%,
+      13% 45%,
+      25% 51%,
+      34% 59%,
+      45% 65%,
+      59% 68%,
+      75% 66%,
+      88% 62%,
+      100% 64%,
+      100% 100%,
+      20% 100%,
+      0 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      1% 50%,
+      10% 57%,
+      19% 62%,
+      33% 64%,
+      44% 60%,
+      55% 52%,
+      71% 45%,
+      88% 46%,
+      100% 56%,
+      100% 100%,
+      20% 100%,
+      0 100%
+    );
+  }
+  100% {
+    clip-path: polygon(
+      0 45%,
+      13% 45%,
+      25% 51%,
+      34% 59%,
+      45% 65%,
+      59% 68%,
+      75% 66%,
+      88% 62%,
+      100% 64%,
+      100% 100%,
+      20% 100%,
+      0 100%
+    );
+  }
+}
+.anim_h1 {
+  font-weight: 700;
+}
+
+/* seo_packages */
+.seo_package {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border: 1px solid #0077ff29;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.delivery,
+.price {
+  width: fit-content;
+  text-align: center;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+  border-radius: 5px;
+}
+.delivery {
+  background-color: #9719034e;
+}
+.price {
+  background-color: #03a8f413;
 }

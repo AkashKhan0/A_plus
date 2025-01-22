@@ -9,7 +9,7 @@ const Project = () => {
   }, []);
   return (
     <>
-      <div className="pro_bg"></div>
+      <div className="u_bg"></div>
       <div className="w-full h-full py-10 relative text-white">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto mb-20">
           projects demo

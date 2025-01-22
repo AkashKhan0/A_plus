@@ -17,6 +17,9 @@ import Career from "./pages/Career";
 import logo from "../src/assets/logo.png";
 import Refund from "./pages/Refund";
 import Smallnav from "./components/Smallnav";
+import Anim from "./pages/Anim";
+import Googleads from "./pages/Googleads";
+import Socialm from "./pages/Socialm";
 
 const App = () => {
   const navbarRef = useRef(null);
@@ -79,8 +82,11 @@ const App = () => {
             <Route path="/services/seo" element={<Services />} />
             <Route path="/services/uiux" element={<Services />} />
             <Route path="/services/smm" element={<Services />} />
+            <Route path="/services/googleads" element={<Googleads />} />
+            <Route path="/services/socialmarketing" element={<Socialm />} />
             <Route path="/services/tech" element={<Services />} />
             <Route path="/services/animation" element={<Services />} />
+            <Route path="/services/animation/anim" element={<Anim />} />
 
             <Route path="/contact" element={<Contact />} />
             <Route path="/blog" element={<Blog />} />

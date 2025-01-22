@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import dataList from "../assets/services";
+import { FaHandPointRight } from "react-icons/fa";
 
 const Seo = () => {
   useEffect(() => {
@@ -30,21 +31,32 @@ const Seo = () => {
       </div>
 
       {/* services card */}
-      <div className="w-full h-fit flex flex-wrap justify-center gap-5 mb-24">
-        {dataList.slice(0, 4).map((item, index) => (
-          <div
-            key={index}
-            className="w-full sm:w-1/2 md:w-1/4 min-w-60 h-80 ser__card"
-          >
-            <div className="front">
-              <img src={item.image} alt="" className="" />
-
-              <h1 className="card-h1 text-3xl font-semibold">{item.title}</h1>
-              <p className="card-p py-2 text-center px-3">{item.description}</p>
+      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
+        {dataList.slice(0, 7).map((item, index) => (
+          <div key={index} className="w-full h-full flex flex-col">
+            <div className="seo_package flex flex-col h-full">
+              <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-semibold mb-10">
+                {item.title}
+              </h1>
+              <div className="flex items-center justify-between gap-5 flex-wrap">
+                <div className="delivery">{item.delivery}</div>
+                <div className="price">{item.price}</div>
+              </div>
+              <p className="my-2 text-center font-medium text-lg">
+                Services will Include
+              </p>
+              {Array.isArray(item.description) ? (
+                <ul className="">
+                  {item.description.map((desc, idx) => (
+                    <li key={idx} className="flex items-center gap-3">
+                      <FaHandPointRight className="text-sm" /> {desc}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="">{item.description}</p>
+              )}
             </div>
-            {/* <div className="back">
-              <p className="py-2">{item.description}</p>
-            </div> */}
           </div>
         ))}
       </div>

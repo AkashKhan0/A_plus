@@ -14,8 +14,8 @@ const Blog = () => {
   }, []);
   return (
     <>
+      <div className="con_bg"></div>
       <div className="w-full h-full py-10 relative text-slate-300">
-        <div className="blog-bg"></div>
         <div className="w-full h-fit text-center">
           <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto mb-20">
             blog
