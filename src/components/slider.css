@@ -12,7 +12,7 @@
   background-color: #7676764b;
   border-radius: 10px;
   backdrop-filter: blur(20px);
-  padding: 5px;
+  padding: 10px;
   transition: 0.5s;
   left: calc(50% - 90px);
   top: 0;

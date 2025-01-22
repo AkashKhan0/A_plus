@@ -20,6 +20,7 @@ import Smallnav from "./components/Smallnav";
 import Anim from "./pages/Anim";
 import Googleads from "./pages/Googleads";
 import Socialm from "./pages/Socialm";
+import Webpack from "./pages/Webpack";
 
 const App = () => {
   const navbarRef = useRef(null);
@@ -83,6 +84,7 @@ const App = () => {
             <Route path="/services/uiux" element={<Services />} />
             <Route path="/services/smm" element={<Services />} />
             <Route path="/services/googleads" element={<Googleads />} />
+            <Route path="/services/webpackage" element={<Webpack />} />
             <Route path="/services/socialmarketing" element={<Socialm />} />
             <Route path="/services/photoshoot" element={<Services />} />
             <Route path="/services/animation" element={<Services />} />

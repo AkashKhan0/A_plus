@@ -144,7 +144,8 @@ const dataList = [
     title: "custom SEO",
     description: ["SEO prices are based on a monthly subscription."],
     delivery: "Talk to set price",
-    price: "contact us ",
+    price: "contact us",
+    link: "/contact",
   },
 
   // marketing data list 8-9
@@ -179,14 +180,14 @@ const dataList = [
     title: "Startup",
     description:
       "Design powerful startup websites to showcase innovations and attract investors or early adopters.",
-    link: "https://example.com/startup",
+    link: "/services/webpackage",
   },
   {
     image: subscription,
     title: "Subscription",
     description:
       "Create subscription-based platforms to manage recurring payments and provide exclusive content or services.",
-    link: "https://example.com/subscription",
+    link: "/services/webpackage",
   },
 
   {
@@ -194,168 +195,168 @@ const dataList = [
     title: "Blog",
     description:
       "Build a blog website to share ideas, stories, and expertise while engaging your audience with valuable and consistent content.",
-    link: "https://example.com/blog",
+    link: "/services/webpackage",
   },
   {
     image: booking,
     title: "Booking",
     description:
       "Create an efficient booking system website for appointments, reservations, or services to streamline user experiences and boost efficiency.",
-    link: "https://example.com/booking",
+    link: "/services/webpackage",
   },
   {
     image: businessWeb,
     title: "Business Web",
     description:
       "Develop professional business websites to establish online credibility and showcase services, products, and brand identity effectively.",
-    link: "https://example.com/business-web",
+    link: "/services/webpackage",
   },
   {
     image: community,
     title: "Community",
     description:
       "Build online community websites to foster engagement, communication, and shared interests among users in a collaborative environment.",
-    link: "https://example.com/community",
+    link: "/services/webpackage",
   },
   {
     image: directory,
     title: "Directory",
     description:
       "Design directory websites for seamless searching and categorization of businesses, services, or locations in an organized manner.",
-    link: "https://example.com/directory",
+    link: "/services/webpackage",
   },
   {
     image: ecomWeb,
     title: "E-commerce Web",
     description:
       "Build modern e-commerce websites to enhance user experiences and drive sales with responsive design and smooth navigation.",
-    link: "https://example.com/ecom-web",
+    link: "/services/webpackage",
   },
   {
     image: entertainment,
     title: "Entertainment",
     description:
       "Design engaging entertainment websites to captivate audiences with music, movies, or games in an interactive format.",
-    link: "https://example.com/entertainment",
+    link: "/services/webpackage",
   },
   {
     image: event,
     title: "Event",
     description:
       "Develop event websites to manage schedules, registrations, and event details seamlessly while enhancing user engagement.",
-    link: "https://example.com/event",
+    link: "/services/webpackage",
   },
   {
     image: hobby,
     title: "Hobby",
     description:
       "Build websites dedicated to hobbies, sharing passions, tutorials, and communities for like-minded enthusiasts to connect and learn.",
-    link: "https://example.com/hobby",
+    link: "/services/webpackage",
   },
   {
     image: informational,
     title: "Informational",
     description:
       "Develop informational websites to share knowledge, resources, and data effectively for educational or professional purposes.",
-    link: "https://example.com/informational",
+    link: "/services/webpackage",
   },
   {
     image: interactive,
     title: "Interactive",
     description:
       "Create interactive websites to boost engagement, learning, and participation through dynamic and immersive experiences.",
-    link: "https://example.com/interactive",
+    link: "/services/webpackage",
   },
   {
     image: kid,
     title: "Kid",
     description:
       "Design websites tailored for children with safe, engaging, and educational content to inspire learning and creativity.",
-    link: "https://example.com/kid",
+    link: "/services/webpackage",
   },
   {
     image: landingPage,
     title: "Landing Page",
     description:
       "Develop conversion-focused landing pages to drive campaigns, lead generation, or specific actions with optimized design.",
-    link: "https://example.com/landing-page",
+    link: "/services/webpackage",
   },
   {
     image: membership,
     title: "Membership",
     description:
       "Build membership websites to manage user subscriptions, content access, and exclusive community features seamlessly.",
-    link: "https://example.com/membership",
+    link: "/services/webpackage",
   },
   {
     image: memorial,
     title: "Memorial",
     description:
       "Create meaningful memorial websites to honor loved ones and share their legacy through memories, photos, and messages.",
-    link: "https://example.com/memorial",
+    link: "/services/webpackage",
   },
   {
     image: news,
     title: "News",
     description:
       "Design dynamic news websites to deliver real-time updates, articles, and breaking stories with responsive and engaging layouts.",
-    link: "https://example.com/news",
+    link: "/services/webpackage",
   },
   {
     image: nonprofit,
     title: "Nonprofit",
     description:
       "Develop nonprofit websites to promote causes, engage donors, and increase awareness through storytelling and donation options.",
-    link: "https://example.com/nonprofit",
+    link: "/services/webpackage",
   },
   {
     image: onlineForum,
     title: "Online Forum",
     description:
       "Build interactive online forums to facilitate discussions, knowledge sharing, and user interaction within communities.",
-    link: "https://example.com/online-forum",
+    link: "/services/webpackage",
   },
   {
     image: personal,
     title: "Personal",
     description:
       "Create personalized websites to showcase your journey, projects, and portfolio in a creative and professional manner.",
-    link: "https://example.com/personal",
+    link: "/services/webpackage",
   },
   {
     image: petition,
     title: "Petition",
     description:
       "Develop petition websites to gather signatures, spread awareness, and drive actionable campaigns effectively.",
-    link: "https://example.com/petition",
+    link: "/services/webpackage",
   },
   {
     image: portfolio,
     title: "Portfolio",
     description:
       "Showcase your skills, work, and achievements with creative and impactful portfolio websites for career growth.",
-    link: "https://example.com/portfolio",
+    link: "/services/webpackage",
   },
   {
     image: school,
     title: "School",
     description:
       "Build school websites to enhance communication, showcase curriculum, and manage events for students and parents.",
-    link: "https://example.com/school",
+    link: "/services/webpackage",
   },
   {
     image: travel,
     title: "Travel",
     description:
       "Build stunning travel websites to inspire wanderlust and simplify trip planning with engaging content.",
-    link: "https://example.com/travel",
+    link: "/services/webpackage",
   },
   {
     image: wedding,
     title: "Wedding",
     description:
       "Design wedding websites to celebrate love, manage guest lists, and share memorable moments online.",
-    link: "https://example.com/wedding",
+    link: "/services/webpackage",
   },
 
   // animation services 34-

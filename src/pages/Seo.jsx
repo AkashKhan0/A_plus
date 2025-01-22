@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import dataList from "../assets/services";
 import { FaHandPointRight } from "react-icons/fa";
 import serbg from "../assets/ser.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Seo = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -48,11 +50,16 @@ const Seo = () => {
                 <div className="delivery">{item.delivery}</div>
                 <div className="price">{item.price}</div>
               </div>
-              <p className="my-2 font-medium text-lg">Services will Include</p>
+              <p className="my-2 font-semibold text-2xl">
+                Services will Include
+              </p>
               {Array.isArray(item.description) ? (
                 <ul className="">
                   {item.description.map((desc, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
+                    <li
+                      key={idx}
+                      className="flex items-start gap-3 font-medium text-lg"
+                    >
                       <FaHandPointRight className="text-sm mt-1" /> {desc}
                     </li>
                   ))}
@@ -75,11 +82,16 @@ const Seo = () => {
                 <div className="delivery">{item.delivery}</div>
                 <div className="price">{item.price}</div>
               </div>
-              <p className="my-2 font-medium text-lg">Services will Include</p>
+              <p className="my-2 font-semibold text-2xl">
+                Services will Include
+              </p>
               {Array.isArray(item.description) ? (
                 <ul className="">
                   {item.description.map((desc, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
+                    <li
+                      key={idx}
+                      className="flex items-start gap-3 font-medium text-lg"
+                    >
                       <FaHandPointRight className="text-sm mt-1" /> {desc}
                     </li>
                   ))}
@@ -97,6 +109,7 @@ const Seo = () => {
           <div
             key={index}
             className="w-full sm:w-3/4 md:w-1/2 h-full flex flex-col justify-center"
+            onClick={() => navigate(item.link)}
           >
             <div className="seo_package flex flex-col h-full">
               <h1 className="text-xl sm:text-2xl text-center capitalize font-semibold mb-10">
@@ -106,11 +119,16 @@ const Seo = () => {
                 <div className="delivery">{item.delivery}</div>
                 <div className="price">{item.price}</div>
               </div>
-              <p className="my-2 font-medium text-lg">Services will Include</p>
+              <p className="my-2 font-semibold text-2xl">
+                Services will Include
+              </p>
               {Array.isArray(item.description) ? (
                 <ul className="">
                   {item.description.map((desc, idx) => (
-                    <li key={idx} className="flex items-start gap-3">
+                    <li
+                      key={idx}
+                      className="flex items-start gap-3 font-medium text-lg"
+                    >
                       <FaHandPointRight className="text-sm mt-1" /> {desc}
                     </li>
                   ))}

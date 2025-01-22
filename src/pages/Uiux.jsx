@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import dataList from "../assets/services";
 import serbg from "../assets/ser.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Uiux = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -37,7 +39,11 @@ const Uiux = () => {
       {/* services card */}
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
         {dataList.slice(11, 37).map((item, index) => (
-          <div key={index} className="w-full h-80 ser__card">
+          <div
+            key={index}
+            className="w-full h-80 ser__card"
+            onClick={() => navigate(item.link)}
+          >
             <div className="front">
               <img src={item.image} alt="" className="" />
 
