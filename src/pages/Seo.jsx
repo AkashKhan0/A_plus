@@ -34,25 +34,84 @@ const Seo = () => {
       </div>
 
       {/* services card */}
-      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
-        {dataList.slice(0, 7).map((item, index) => (
-          <div key={index} className="w-full h-full flex flex-col">
+      <div className="w-full h-fit grid place-items-center gap-5 mb-5">
+        {dataList.slice(0, 1).map((item, index) => (
+          <div
+            key={index}
+            className="w-full sm:w-3/4 md:w-1/2 h-full flex flex-col justify-center"
+          >
             <div className="seo_package flex flex-col h-full">
-              <h1 className="text-xl sm:text-2xl md:text-3xl text-center font-semibold mb-10">
+              <h1 className="text-xl sm:text-2xl text-center font-semibold mb-10">
                 {item.title}
               </h1>
               <div className="flex items-center justify-between gap-5 flex-wrap">
                 <div className="delivery">{item.delivery}</div>
                 <div className="price">{item.price}</div>
               </div>
-              <p className="my-2 text-center font-medium text-lg">
-                Services will Include
-              </p>
+              <p className="my-2 font-medium text-lg">Services will Include</p>
               {Array.isArray(item.description) ? (
                 <ul className="">
                   {item.description.map((desc, idx) => (
-                    <li key={idx} className="flex items-center gap-3">
-                      <FaHandPointRight className="text-sm" /> {desc}
+                    <li key={idx} className="flex items-start gap-3">
+                      <FaHandPointRight className="text-sm mt-1" /> {desc}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="">{item.description}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
+        {dataList.slice(1, 4).map((item, index) => (
+          <div key={index} className="w-full h-full flex flex-col">
+            <div className="seo_package flex flex-col h-full">
+              <h1 className="text-xl sm:text-2xl text-center font-semibold mb-10">
+                {item.title}
+              </h1>
+              <div className="flex items-center justify-between gap-5 flex-wrap">
+                <div className="delivery">{item.delivery}</div>
+                <div className="price">{item.price}</div>
+              </div>
+              <p className="my-2 font-medium text-lg">Services will Include</p>
+              {Array.isArray(item.description) ? (
+                <ul className="">
+                  {item.description.map((desc, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <FaHandPointRight className="text-sm mt-1" /> {desc}
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="">{item.description}</p>
+              )}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="w-full h-fit grid place-items-center gap-5 mb-5">
+        {dataList.slice(4, 8).map((item, index) => (
+          <div
+            key={index}
+            className="w-full sm:w-3/4 md:w-1/2 h-full flex flex-col justify-center"
+          >
+            <div className="seo_package flex flex-col h-full">
+              <h1 className="text-xl sm:text-2xl text-center capitalize font-semibold mb-10">
+                {item.title}
+              </h1>
+              <div className="flex items-center justify-between gap-5 flex-wrap">
+                <div className="delivery">{item.delivery}</div>
+                <div className="price">{item.price}</div>
+              </div>
+              <p className="my-2 font-medium text-lg">Services will Include</p>
+              {Array.isArray(item.description) ? (
+                <ul className="">
+                  {item.description.map((desc, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <FaHandPointRight className="text-sm mt-1" /> {desc}
                     </li>
                   ))}
                 </ul>

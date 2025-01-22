@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import dataList from "../assets/services";
 import serbg from "../assets/ser.jpg";
-const selectedItems = [dataList[9]];
+const selectedItems = [dataList[10]];
 const Tech = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,27 +14,27 @@ const Tech = () => {
       <div className="ser-bg"></div>
       <div className="w-full h-fit text-center mt-20">
         <h1 className="text-2xl sm:text-3xl md:text-4xl text-white uppercase font-semibold relative w-fit m-auto mb-10">
-          Tech Support
+          Photoshoot
           <span className="w-1/2 h-1 bg-red-600 absolute left-0 -bottom-3 rounded-full"></span>
         </h1>
         <p className="my-10 text-justify">
-          Our in-depth technical support services ensure smooth operations
-          custom-made to your business requirements. Our professionals will be
-          equipped to heal your IT glitches, keep the system efficient, and
-          assured solutions that maintain the flow of the whole procedure. 24/7
-          Support : 24 hours an issue would be addressed immediately. Proactive
-          Maintenance : Preventive strategies for downtime and improved system
-          performance. Tailored Solutions : Customized technical support
-          packages tailored just for you. Consult with us to take care of any of
-          your technical woes while you keep your attention focused on business
-          growth!
+          Your events deserve more than just photos—they deserve stories told
+          through timeless images. Our professional photography service is here
+          to cover all kinds of events, from magical weddings and joyful
+          birthdays to corporate gatherings and cultural celebrations. We
+          capture the essence of every moment with creativity, detail, and
+          passion, ensuring your memories are preserved beautifully. No matter
+          the occasion, trust us to make your special day unforgettable!
         </p>
       </div>
 
       {/* services card */}
-      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-items-center gap-5 mb-24">
+      <div className="w-full h-fit grid place-items-center gap-5 mb-5">
         {selectedItems.map((item, index) => (
-          <div key={index} className="w-full h-80 ser__card">
+          <div
+            key={index}
+            className="w-full sm:w-3/4 md:w-1/2 h-80 flex flex-col justify-center ser__card"
+          >
             <div className="front">
               <img src={item.image} alt="" className="" />
 

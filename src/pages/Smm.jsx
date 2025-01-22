@@ -31,7 +31,7 @@ const Smm = () => {
 
       {/* services card */}
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-items-center gap-5 mb-24">
-        {dataList.slice(7, 9).map((item, index) => (
+        {dataList.slice(8, 10).map((item, index) => (
           <div
             key={index}
             className="w-full h-80 ser__card"

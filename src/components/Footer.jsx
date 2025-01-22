@@ -13,13 +13,16 @@ import pay5 from "../assets/pay5.png";
 import pay6 from "../assets/pay6.jpg";
 import pay7 from "../assets/pay7.png";
 import pay8 from "../assets/pay8.png";
+import homebg from "../assets/footer.png";
 
 const Footer = () => {
   const navigate = useNavigate();
   return (
     <>
       <div className="w-full h-fit relative px-5 sm:px-10 md:px-20 m-auto footer pt-10">
-        <div className="blurr"></div>
+        <div className="con_bg">
+          <img src={homebg} alt="" />
+        </div>
         <div className="max-w-screen-xl m-auto py-5 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-5">
           <div className="">
             <img src={logo} alt="" className="w-32" />
@@ -80,7 +83,9 @@ const Footer = () => {
             </a>
             <a href="mailto:aplusadvertisinglimited@gmail.com?subject=Inquiry&body=Hi, I have a question about...">
               <p className="f-list flex items-start gap-2">
-                <IoMdMail className="cursor-pointer mt-1" />
+                <div className="w-4 h-4 mt-1">
+                  <IoMdMail className="cursor-pointer" />
+                </div>
                 aplusadvertisinglimited@gmail.com
               </p>
             </a>

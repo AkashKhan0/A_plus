@@ -84,7 +84,7 @@ const App = () => {
             <Route path="/services/smm" element={<Services />} />
             <Route path="/services/googleads" element={<Googleads />} />
             <Route path="/services/socialmarketing" element={<Socialm />} />
-            <Route path="/services/tech" element={<Services />} />
+            <Route path="/services/photoshoot" element={<Services />} />
             <Route path="/services/animation" element={<Services />} />
             <Route path="/services/animation/anim" element={<Anim />} />
 

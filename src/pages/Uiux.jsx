@@ -36,7 +36,7 @@ const Uiux = () => {
 
       {/* services card */}
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
-        {dataList.slice(10, 36).map((item, index) => (
+        {dataList.slice(11, 37).map((item, index) => (
           <div key={index} className="w-full h-80 ser__card">
             <div className="front">
               <img src={item.image} alt="" className="" />

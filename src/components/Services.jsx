@@ -50,7 +50,7 @@ const Services = () => {
             {currentItems.map((item, index) => (
               <div
                 key={item.id}
-                className="slider-item"
+                className="slider-item -z-10"
                 style={{
                   backgroundImage: `url(${item.image})`,
                   display: index < 6 ? "block" : "none",

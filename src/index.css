@@ -12,6 +12,7 @@
   outline: none;
   font-family: "Outfit", serif;
 }
+
 body {
   background-color: black;
 }
@@ -42,6 +43,7 @@ h2 {
 .on_logo {
   z-index: 777;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   background-color: transparent;
   border-radius: 50px;
 }
@@ -51,11 +53,13 @@ h2 {
 .navbar {
   background-color: transparent;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   z-index: 888;
 }
 .que {
   color: #8aff9a;
   text-shadow: 0 0 2px rgb(0, 0, 0);
+  -webkit-text-shadow: 0 0 2px rgb(0, 0, 0);
   letter-spacing: 0.3px;
 }
 .answer {
@@ -74,6 +78,7 @@ h2 {
 }
 .hero-title {
   mix-blend-mode: multiply;
+  -webkit-mix-blend-mode: multiply;
 }
 .text-box {
   text-transform: uppercase;
@@ -89,6 +94,7 @@ h2 {
   background-color: #000;
   color: #fff;
   mix-blend-mode: multiply;
+  -webkit-mix-blend-mode: multiply;
   text-align: center;
 }
 
@@ -126,10 +132,12 @@ button {
   background-color: #ffffff13;
 }
 
-.btn1 {
+:-webkit-any(.btn1) {
   letter-spacing: 2px;
   border: 1px solid #ffffff20;
   transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 777;
 }
 .btn1:hover {
   border: 1px solid #ff001900;
@@ -194,7 +202,9 @@ button {
   left: -40px;
   top: -40px;
   transform-origin: 0 0 0;
+  -webkit-transform-origin: 0 0 0;
   transform: scaleY(0);
+  -webkit-transform: scaleY(0);
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 500;
@@ -216,6 +226,7 @@ button {
 }
 .navFoot:hover .name {
   transform: scaleY(1);
+  -webkit-transform: scaleY(1);
 }
 .navFoot:hover .shap {
   opacity: 1;
@@ -232,7 +243,6 @@ button {
 .slider-container {
   width: 100%;
   height: 600px;
-  z-index: -1;
 }
 
 .slider-slide .slider-item {
@@ -321,12 +331,14 @@ button {
     opacity: 0;
     transform: translate(0, 100px);
     filter: blur(33px);
+    -webkit-filter: blur(33px);
   }
 
   to {
     opacity: 1;
     transform: translate(0);
     filter: blur(0);
+    -webkit-filter: blur(0);
     text-shadow: 0 0 10px #000;
     padding: 5px 20px;
     border-radius: 10px;
@@ -376,16 +388,21 @@ button {
   top: 10%;
   left: calc(50% - 100px);
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transform: perspective(900px);
+  -webkit-transform: perspective(900px);
   animation: autoRun 100s linear infinite;
+  -webkit-animation: autoRun 100s linear infinite;
   z-index: 2;
 }
 @keyframes autoRun {
   from {
     transform: perspective(1000px) rotateX(-12deg) rotateY(0deg);
+    -webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(0deg);
   }
   to {
     transform: perspective(1000px) rotateX(-12deg) rotateY(360deg);
+    -webkit-transform: perspective(1000px) rotateX(-12deg) rotateY(360deg);
   }
 }
 
@@ -393,6 +410,10 @@ button {
   position: absolute;
   inset: 0 0 0 0;
   transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(400px);
+  -webkit-transform: rotateY(
       calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
     )
     translateZ(400px);
@@ -407,6 +428,7 @@ button {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
   width: min(1400px, 100vw);
   height: max-content;
   padding-bottom: 100px;
@@ -419,6 +441,7 @@ button {
 
 .banner .content .model {
   background-image: url(./robot.png);
+  -webkit-background-image: url(./robot.png);
   position: absolute;
   bottom: 1vh;
   left: 0;
@@ -432,9 +455,14 @@ button {
     width: 160px;
     height: 200px;
     left: calc(50% - 80px);
+    -webkit-left: calc(50% - 80px);
   }
   .banner .slider .item {
     transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(300px);
+    -webkit-transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
       translateZ(300px);
@@ -455,9 +483,14 @@ button {
     width: 100px;
     height: 150px;
     left: calc(50% - 50px);
+    -webkit-left: calc(50% - 50px);
   }
   .banner .slider .item {
     transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(180px);
+    -webkit-transform: rotateY(
         calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
       )
       translateZ(180px);
@@ -486,8 +519,8 @@ button {
 .footer {
   background-color: #eeeeee17;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
-.blurr,
 .con_bg img {
   position: fixed;
   top: 0;
@@ -498,14 +531,12 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  object-fit: cover;
   z-index: -1;
   opacity: 0.1;
 }
 b {
   color: #25d366;
-}
-.blurr {
-  background-image: url("./footer.png");
 }
 
 @media (max-width: 788px) {
@@ -523,6 +554,7 @@ b {
   cursor: pointer;
   background-color: transparent;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 .card img {
   transition: all 0.5s ease;
@@ -545,6 +577,7 @@ b {
   cursor: pointer;
   background-color: transparent;
   backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
 }
 .owner img {
   transition: all 0.5s ease;
@@ -631,6 +664,7 @@ b {
 .front,
 .back {
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   position: relative;
   width: 100%;
   height: 100%;
@@ -647,6 +681,7 @@ b {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   object-fit: cover;
   opacity: 0.5;
   z-index: -1;
@@ -660,6 +695,7 @@ b {
   top: 150px;
   background-color: #0000006c;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   transition: 0.3s all ease-in-out;
   padding: 0 10px;
   text-align: center;
@@ -671,6 +707,7 @@ b {
   opacity: 0;
   background-color: #0000006c;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   transition: 0.3s all ease-in-out;
 }
 .front:hover .card-h1 {
@@ -721,6 +758,7 @@ form {
 .career_form {
   background-color: #ffffff0a;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 20px;
 }
 .inp_box {
@@ -732,6 +770,7 @@ form {
   gap: 10px;
   background-color: #41414116;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 .inp_box input,
 textarea {
@@ -747,6 +786,7 @@ textarea {
 .c-btn {
   background-color: #41414116;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 5px;
   transition: all 0.3s;
 }
@@ -787,6 +827,7 @@ textarea {
   background-color: #68686810;
   border-radius: 6px;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 .left_part {
   left: 0;
@@ -830,6 +871,7 @@ textarea {
   left: 50%;
   z-index: -1;
   animation: moveline 10s linear forwards;
+  -webkit-animation: moveline 10s linear forwards;
 }
 @keyframes moveline {
   0% {
@@ -924,6 +966,7 @@ textarea {
 }
 .hourglass .top:after {
   animation: top-drip 10s linear infinite;
+  -webkit-animation: top-drip 10s linear infinite;
   background-color: #fc6;
   content: "";
   display: block;
@@ -939,6 +982,7 @@ textarea {
 }
 .hourglass .bottom:before {
   animation: bottom 10s linear infinite;
+  -webkit-animation: bottom 10s linear infinite;
   background-color: #fc6;
   border-radius: 50%;
   content: "";
@@ -952,6 +996,7 @@ textarea {
 }
 .hourglass .bottom:after {
   animation: bottom-drip 10s linear infinite;
+  -webkit-animation: bottom-drip 10s linear infinite;
   background-color: #fc6;
   content: "";
   display: block;
@@ -1056,6 +1101,7 @@ textarea {
   height: 350px;
   background-color: #0000000e;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   display: grid;
   place-content: center;
   padding: 20px;
@@ -1087,6 +1133,13 @@ textarea {
     var(--color) 180deg,
     transparent 240deg
   );
+  -webkit-background-image: conic-gradient(
+    var(--color) 0deg,
+    transparent 60deg,
+    transparent 180deg,
+    var(--color) 180deg,
+    transparent 240deg
+  );
   inset: -50%;
   z-index: -2;
   animation: border 8s linear infinite;
@@ -1094,6 +1147,7 @@ textarea {
 @keyframes border {
   to {
     transform: rotateZ(-360deg);
+    -webkit-transform: rotateZ(-360deg);
   }
 }
 .u_card::after,
@@ -1104,6 +1158,7 @@ textarea {
   background-color: #111;
   inset: var(--inset);
   border-radius: calc(var(--border-size) - var(--inset));
+  -webkit-border-radius: calc(var(--border-size) - var(--inset));
   z-index: -1;
   transition: all 0.3s linear;
 }
@@ -1170,6 +1225,7 @@ textarea {
   border: 1px solid #ffffff17;
   padding: 10px 20px;
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 5px;
   z-index: 777;
 }
@@ -1314,15 +1370,16 @@ select option:hover {
   width: fit-content;
   position: absolute;
 }
-.anim:nth-child(1) {
+.anim1 {
   color: transparent;
   -webkit-text-stroke: 1px #03a9f4;
 }
-.anim:nth-child(2) {
+.anim2 {
   color: #03a9f4;
-  animation: animate 4s ease-in-out infinite;
+  animation: animate1 4s ease-in-out infinite;
+  -webkit-animation: animate1 4s ease-in-out infinite;
 }
-@keyframes animate {
+@keyframes animate1 {
   0% {
     clip-path: polygon(
       0 45%,

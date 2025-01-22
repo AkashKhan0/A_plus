@@ -41,12 +41,10 @@ import anim4 from "./anim4.gif";
 import anim5 from "./anim5.gif";
 
 const dataList = [
-  // seo data list 0-7
+  // seo data list 0-8
   {
     title: "E-commerce SEO",
     description: ["Etsy", "Ebay", "Shopify", "Wix", "Wordpress"],
-    delivery: "10 days",
-    price: "$ negotiable",
   },
   {
     title: "Etsy",
@@ -142,8 +140,14 @@ const dataList = [
     delivery: "10 days",
     price: "$ 100 ",
   },
+  {
+    title: "custom SEO",
+    description: ["SEO prices are based on a monthly subscription."],
+    delivery: "Talk to set price",
+    price: "contact us ",
+  },
 
-  // marketing data list 7-9
+  // marketing data list 8-9
 
   {
     image: googleAds,
@@ -163,7 +167,7 @@ const dataList = [
   // main sub start  6-6
   {
     image: techSupport,
-    title: "Tech Support",
+    title: "Photoshoot",
     description:
       "Develop tech support platforms to assist users with troubleshooting, FAQs, and issue resolution effectively.",
     link: "https://example.com/tech-support",

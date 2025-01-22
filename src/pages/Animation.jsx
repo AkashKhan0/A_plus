@@ -50,7 +50,7 @@ const Animation = () => {
 
       {/* services card */}
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
-        {dataList.slice(36, 41).map((item, index) => (
+        {dataList.slice(37, 42).map((item, index) => (
           <div
             key={index}
             className="w-full h-80 ser__card"

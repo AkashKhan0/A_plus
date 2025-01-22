@@ -22,7 +22,7 @@ const Services = () => {
         return <Uiux />;
       case "/services/smm":
         return <Smm />;
-      case "/services/tech":
+      case "/services/photoshoot":
         return <Tech />;
       case "/services/animation":
         return <Animation />;
@@ -77,14 +77,16 @@ const Services = () => {
             </Link>
           </div>
           <div className={`sub-menu relative`}>
-            <Link to="/services/tech">
-              <div className={`sub-shap ${isActive("/services/tech")}`}></div>
+            <Link to="/services/photoshoot">
+              <div
+                className={`sub-shap ${isActive("/services/photoshoot")}`}
+              ></div>
               <button
                 className={`bbutton ${
-                  isActive("/services/tech") ? "clr" : "wt"
+                  isActive("/services/photoshoot") ? "clr" : "wt"
                 }`}
               >
-                tech support
+                Photoshoot
               </button>
             </Link>
           </div>

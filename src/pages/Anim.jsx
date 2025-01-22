@@ -14,8 +14,12 @@ const Anim = () => {
       </div>
       <div className="w-full h-fit text-center my-10 text-white">
         <div className="relative w-full h-24 flex items-center justify-center">
-          <h1 className="anim text-3xl sm:text-5xl md:text-8xl">animation</h1>
-          <h1 className="anim text-3xl sm:text-5xl md:text-8xl">animation</h1>
+          <h1 className="anim anim1 text-3xl sm:text-5xl md:text-8xl">
+            animation
+          </h1>
+          <h1 className="anim anim2 text-3xl sm:text-5xl md:text-8xl">
+            animation
+          </h1>
         </div>
         <h1 className="anim_h1 text-lg sm:text-2xl md:text-3xl my-5">
           Bring Your Ideas to Life with Stunning Animations and Cartoons

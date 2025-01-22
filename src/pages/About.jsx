@@ -20,15 +20,15 @@ const About = () => {
             <span className="w-full h-1 bg-red-600 absolute left-0 -bottom-3 rounded-full"></span>
           </h1>
           <p className="my-10 text-justify font-normal text-lg">
-            Some information about our company : Welcome to “A plus Advertising
-            ” , a proud sub-brand of “A plus Communication”, established in
-            2024. We specialize in delivering high-quality services, ensuring
-            value for your investment, and always adhering to timely work for
-            maximum client satisfaction. Our commitment extends beyond just
-            results; we’re here to provide unmatched client support every step
-            of the way. Let’s keep it simple, stay focused, and together, be
-            unstoppable in achieving your business goals. Get in touch today to
-            transform your ideas into reality!
+            Welcome to “A plus Advertising ” , a proud sub-brand of “A plus
+            Communication”, established in 2024. We specialize in delivering
+            high-quality services, ensuring value for your investment, and
+            always adhering to timely work for maximum client satisfaction. Our
+            commitment extends beyond just results; we’re here to provide
+            unmatched client support every step of the way. Let’s keep it
+            simple, stay focused, and together, be unstoppable in achieving your
+            business goals. Get in touch today to transform your ideas into
+            reality!
           </p>
         </div>
 

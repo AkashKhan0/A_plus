@@ -25,9 +25,11 @@ const Faq = () => {
             <div key={index}>
               <div
                 onClick={() => toggleAnswer(index)}
-                className="text-xl sm:text-2xl md:text-3xl font-medium que cursor-pointer mt-3 flex items-center gap-5"
+                className="text-xl sm:text-2xl md:text-3xl font-medium que cursor-pointer mt-3 flex items-start gap-5"
               >
-                <BsPatchQuestionFill />
+                <div className="text-xl sm:text-2xl md:text-3xl w-4 h-4 mt-1">
+                  <BsPatchQuestionFill />
+                </div>
                 {item.question}
                 {activeIndex === index ? <FaAngleDown /> : <FaAngleRight />}
               </div>
