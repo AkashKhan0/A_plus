@@ -1495,6 +1495,7 @@ select option:hover {
 .hover_up {
   transform: scale(1);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 .hover_up:hover {
   transform: scale(1.05);

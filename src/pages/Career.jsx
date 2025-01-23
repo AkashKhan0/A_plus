@@ -107,7 +107,7 @@ const Career = () => {
         {jobs.map((job, index) => (
           <div
             key={index}
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow hover_up"
           >
             <div className="flex items-center gap-4 mb-4">
               {job.icon}

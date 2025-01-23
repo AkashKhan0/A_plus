@@ -21,9 +21,9 @@ const Project = () => {
 
         <div className="w-full flex items-center justify-center gap-5 flex-wrap">
           {demodata.map((review, index) => (
-            <div className="u_card2 u_box w-full" key={index}>
+            <div className="u_card2 u_box w-full hover_up" key={index}>
               <div className="owner_p">
-                <img src={review.image} alt="" className="" />
+                <img src={review.image} alt="" className="w-full" />
                 <div className="">
                   <h1 className="text-xl sm:text-2xl capitalize font-medium text-center my-3">
                     {review.name}
