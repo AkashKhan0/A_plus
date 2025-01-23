@@ -179,8 +179,8 @@ const dataList = [
   {
     title: "custom SEO",
     description: ["SEO prices are based on a monthly subscription."],
-    delivery: "Talk to set price",
-    price: "contact us",
+    delivery: "Talk to",
+    price: "set price",
     link: "/contact",
   },
 

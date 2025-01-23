@@ -98,10 +98,16 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className="f-list flex items-start gap-2">
-                <RiRoadMapFill className="cursor-pointer w-4" />
-                214, Tejgaon Ind.Area, Tejgaon, Dhaka-1208
-              </p>
+              <a
+                href="https://maps.app.goo.gl/JnBpZNefaX4dUrQT8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <p className="f-list flex items-start gap-2">
+                  <RiRoadMapFill className="cursor-pointer w-4 mt-1" />
+                  214, Tejgaon Ind.Area, Tejgaon, Dhaka-1208
+                </p>
+              </a>
             </a>
           </div>
         </div>
@@ -118,7 +124,7 @@ const Footer = () => {
           <FaLinkedinIn className="fc-icon" />
 
           <a
-            href="https://youtube.com/@aplusadvertisinglimited?si=KDDTEGQiRkybXVkQ"
+            href="https://www.youtube.com/@aplusadvertisinglimited"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -127,9 +127,11 @@ const Career = () => {
         <p className="text-2xl mb-4">Ready to Apply?</p>
         <p>
           Send your CV and portfolio to :{" "}
-          <span className="text-blue-400">
-            aplusadvertisinglimited@gmail.com{" "}
-          </span>
+          <a href="mailto:aplusadvertisinglimited@gmail.com?subject=Inquiry&body=Hi, I have a question about...">
+            <span className="text-blue-400">
+              aplusadvertisinglimited@gmail.com{" "}
+            </span>
+          </a>
         </p>
       </div>
       {/* nine  */}
