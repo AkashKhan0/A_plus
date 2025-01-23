@@ -21,6 +21,7 @@ import Anim from "./pages/Anim";
 import Googleads from "./pages/Googleads";
 import Socialm from "./pages/Socialm";
 import Webpack from "./pages/Webpack";
+import Hire from "./pages/Hire";
 
 const App = () => {
   const navbarRef = useRef(null);
@@ -77,6 +78,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/hire" element={<Hire />} />
             <Route path="/services" element={<Services />} />
 
             <Route path="/services/seo" element={<Services />} />

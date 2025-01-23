@@ -20,6 +20,7 @@ import { TbSeo } from "react-icons/tb";
 import { CgWebsite } from "react-icons/cg";
 import { FaUsers } from "react-icons/fa6";
 import { MdOutlineSupportAgent, MdAnimation } from "react-icons/md";
+import { GiCardPick } from "react-icons/gi";
 
 const Smallnav = () => {
   return (
@@ -41,6 +42,16 @@ const Smallnav = () => {
             <div className="name_sm_nav">services</div>
           </div>
         </Link>
+
+        <Link to="/hire">
+          <div className="flex items-center text-white text-base small_items">
+            <div className="icon_sm_nav">
+              <GiCardPick />
+            </div>
+            <div className="name_sm_nav">hire us</div>
+          </div>
+        </Link>
+
         <Link to="/contact">
           <div className="flex items-center text-white text-base small_items">
             <div className="icon_sm_nav">

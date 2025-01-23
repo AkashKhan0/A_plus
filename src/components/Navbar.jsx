@@ -21,6 +21,7 @@ import { TbSeo } from "react-icons/tb";
 import { CgWebsite } from "react-icons/cg";
 import { FaUsers } from "react-icons/fa6";
 import { MdOutlineSupportAgent, MdAnimation } from "react-icons/md";
+import { GiCardPick } from "react-icons/gi";
 
 const Navbar = ({ toggleNavbar }) => {
   const location = useLocation();
@@ -128,6 +129,15 @@ const Navbar = ({ toggleNavbar }) => {
               </div>
             </div>
           )}
+          {/* menu items */}
+          <div className={`list duration-200 px-2 ${isActive("/hire")}`}>
+            <Link to="/hire" onClick={toggleNavbar}>
+              <p className="flex items-center gap-3">
+                <GiCardPick />
+                hire us
+              </p>
+            </Link>
+          </div>
 
           {/* menu items */}
           <div className={`list duration-200 px-2 ${isActive("/contact")}`}>

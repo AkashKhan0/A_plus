@@ -65,7 +65,8 @@ const Webpack = () => {
                 <ul className="">
                   {item.description.map((desc, idx) => (
                     <li key={idx} className="flex items-start text-lg gap-3">
-                      <FaHandPointRight className="text-sm mt-2 w-5" /> {desc}
+                      <FaHandPointRight className="text-sm mt-2 min-w-5" />{" "}
+                      {desc}
                     </li>
                   ))}
                 </ul>
