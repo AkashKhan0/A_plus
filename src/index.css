@@ -456,8 +456,7 @@ button {
 }
 
 .banner .content .model {
-  background-image: url(./robot.png);
-  -webkit-background-image: url(./robot.png);
+  background-image: url(./assets/robot.png);
   position: absolute;
   bottom: 1vh;
   left: 0;
