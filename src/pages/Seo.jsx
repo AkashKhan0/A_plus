@@ -81,7 +81,8 @@ const Seo = () => {
                       key={idx}
                       className="flex items-start gap-3 font-medium text-lg"
                     >
-                      <FaHandPointRight className="text-sm mt-1" /> {desc}
+                      <FaHandPointRight className="text-sm mt-1 min-w-5" />{" "}
+                      {desc}
                     </li>
                   ))}
                 </ul>
