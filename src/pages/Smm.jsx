@@ -31,7 +31,7 @@ const Smm = () => {
 
       {/* services card */}
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 place-items-center gap-5 mb-24">
-        {dataList.slice(8, 10).map((item, index) => (
+        {dataList.slice(10, 12).map((item, index) => (
           <div
             key={index}
             className="w-full h-80 ser__card"
@@ -44,6 +44,9 @@ const Smm = () => {
               <p className="card-p py-2 text-lg text-center px-3">
                 {item.description}
               </p>
+              <div className="flex items-center justify-center w-full mt-5 absolute bottom-5 left-0 px-5">
+                <button className="btn_pack w-fit">learn more</button>
+              </div>
             </div>
           </div>
         ))}

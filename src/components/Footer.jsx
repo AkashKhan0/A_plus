@@ -89,9 +89,7 @@ const Footer = () => {
             </a>
             <a href="mailto:aplusadvertisinglimited@gmail.com?subject=Inquiry&body=Hi, I have a question about...">
               <p className="f-list flex items-start gap-2">
-                <div className="w-4 h-4 mt-1">
-                  <IoMdMail className="cursor-pointer" />
-                </div>
+                <IoMdMail className="cursor-pointer w-4 mt-1" />
                 aplusadvertisinglimited@gmail.com
               </p>
             </a>
@@ -101,7 +99,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <p className="f-list flex items-start gap-2">
-                <RiRoadMapFill className="cursor-pointer mt-1" />
+                <RiRoadMapFill className="cursor-pointer w-4" />
                 214, Tejgaon Ind.Area, Tejgaon, Dhaka-1208
               </p>
             </a>

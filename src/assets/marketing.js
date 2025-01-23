@@ -13,6 +13,7 @@ const marketingData = [
       "Ad extensions 6",
       "Campaign OA",
     ],
+    link: "/contact",
   },
   {
     package: "PACKAGE : 2",
@@ -26,6 +27,7 @@ const marketingData = [
       "Ad extensions 6",
       "Campaign OA",
     ],
+    link: "/contact",
   },
   {
     package: "PACKAGE : 3",
@@ -39,6 +41,7 @@ const marketingData = [
       "Ad extensions 6",
       "Campaign OA",
     ],
+    link: "/contact",
   },
 
   // data for facebook marketing 3-6
@@ -57,6 +60,7 @@ const marketingData = [
       "Pixels set up",
       "CAPI set up",
     ],
+    link: "/contact",
   },
   {
     package: "PACKAGE : 2",
@@ -73,6 +77,7 @@ const marketingData = [
       "Pixels set up",
       "CAPI SET UP",
     ],
+    link: "/contact",
   },
   {
     package: "PACKAGE : 3",
@@ -89,6 +94,7 @@ const marketingData = [
       "Pixels set up",
       "CAPI SET UP",
     ],
+    link: "/contact",
   },
   // for website packages 7-12
   {
@@ -105,6 +111,7 @@ const marketingData = [
       "3 months of post-launch support",
       "Up to 10 revisions",
     ],
+    link: "/contact",
   },
   {
     package: "Standard Package",
@@ -121,6 +128,7 @@ const marketingData = [
       "3 months of post-launch support",
       "Up to 10 revisions",
     ],
+    link: "/contact",
   },
   {
     package: "Advanced Package",
@@ -137,6 +145,7 @@ const marketingData = [
       "3 months of post-launch support",
       "Up to 10 revisions",
     ],
+    link: "/contact",
   },
   {
     package: "Premium Package",
@@ -154,6 +163,7 @@ const marketingData = [
       "3 months of post-launch support",
       "Up to 10 revisions",
     ],
+    link: "/contact",
   },
   {
     package: "Custom Package",
@@ -170,6 +180,7 @@ const marketingData = [
       "3 months of post-launch support",
       "Up to 10 revisions",
     ],
+    link: "/contact",
   },
 ];
 

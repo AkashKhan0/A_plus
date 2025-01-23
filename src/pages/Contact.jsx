@@ -10,7 +10,6 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
   FaUser,
-  FaYoutube,
 } from "react-icons/fa";
 
 const Contact = () => {
@@ -110,23 +109,9 @@ const Contact = () => {
           </div>
 
           <div className="flex items-center justify-start gap-5 flex-wrap mt-10">
-            <a
-              href="https://facebook.com/profile.php?id=61571925213316"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaFacebookF className="fc-icon" />
-            </a>
+            <FaFacebookF className="fc-icon" />
             <FaInstagram className="fc-icon" />
             <FaLinkedinIn className="fc-icon" />
-
-            <a
-              href="https://youtube.com/@aplusadvertisinglimited?si=KDDTEGQiRkybXVkQ"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaYoutube className="fc-icon" />
-            </a>
             <a
               href="https://wa.me/8801850219432?text=Hi!%20I%20need%20assistance"
               target="_blank"

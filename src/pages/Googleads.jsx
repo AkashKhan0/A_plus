@@ -38,7 +38,7 @@ const Googleads = () => {
 
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24 text-white">
         {marketingData.slice(0, 3).map((item, index) => (
-          <div key={index} className="w-full h-full flex flex-col">
+          <div key={index} className="w-full h-full flex flex-col hover_up">
             <div
               className="seo_package flex flex-col h-full"
               onMouseMove={handleMouseMove}
@@ -66,6 +66,15 @@ const Googleads = () => {
               ) : (
                 <p className="">{item.description}</p>
               )}
+
+              <div className="flex items-center justify-center w-full mt-5">
+                <button
+                  onClick={() => navigate(item.link)}
+                  className="btn_pack"
+                >
+                  contact us
+                </button>
+              </div>
             </div>
           </div>
         ))}

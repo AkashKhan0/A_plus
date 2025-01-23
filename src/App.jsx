@@ -54,16 +54,15 @@ const App = () => {
         <img
           src={logo}
           alt=""
-          className="fixed top-2 left-4 w-12 sm:w-12 md:w-20 cursor-pointer on_logo"
+          className="fixed top-4 left-4 w-12 sm:w-12 md:w-20 cursor-pointer on_logo"
           onClick={() => navigate("")}
         />
         <div
-          className="menu fixed top-1 right-2 p-2 text-3xl font-semibold rounded-lg text-white cursor-pointer"
+          className="menu fixed top-4 right-2 sm:right-5 p-2 text-3xl font-semibold rounded-lg text-white cursor-pointer"
           onClick={toggleNavbar}
         >
           {isOpen ? <RxCross2 /> : <AiOutlineMenuUnfold />}
         </div>
-        {/* Livechat Component */}
         <Livechat />
 
         <div

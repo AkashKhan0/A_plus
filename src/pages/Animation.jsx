@@ -50,7 +50,7 @@ const Animation = () => {
 
       {/* services card */}
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
-        {dataList.slice(37, 42).map((item, index) => (
+        {dataList.slice(39, 44).map((item, index) => (
           <div
             key={index}
             className="w-full h-80 ser__card"
@@ -61,6 +61,10 @@ const Animation = () => {
 
               <h1 className="card-h1 text-3xl font-semibold">{item.title}</h1>
               <p className="card-p py-2 text-center px-3">{item.description}</p>
+            </div>
+
+            <div className="flex items-center justify-center w-full mt-5 absolute bottom-5 left-0 px-5">
+              <button className="btn_pack w-fit">see details</button>
             </div>
           </div>
         ))}

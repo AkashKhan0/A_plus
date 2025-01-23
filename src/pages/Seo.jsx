@@ -53,7 +53,7 @@ const Seo = () => {
         {dataList.slice(0, 1).map((item, index) => (
           <div
             key={index}
-            className="w-full sm:w-3/4 md:w-1/2 h-full flex flex-col justify-center"
+            className="w-full sm:w-3/4 md:w-1/2 h-full flex flex-col justify-center hover_up"
           >
             <div
               className="seo_package flex flex-col h-full"
@@ -92,11 +92,11 @@ const Seo = () => {
           </div>
         ))}
       </div>
-      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24">
-        {dataList.slice(1, 4).map((item, index) => (
-          <div key={index} className="w-full h-full flex flex-col">
+      <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-10 mb-24">
+        {dataList.slice(1, 6).map((item, index) => (
+          <div key={index} className="w-full h-full flex flex-col hover_up">
             <div
-              className="seo_package flex flex-col h-full"
+              className="seo_package flex flex-col h-full relative"
               onMouseMove={handleMouseMove}
               onMouseLeave={handleMouseLeave}
               style={{
@@ -115,7 +115,7 @@ const Seo = () => {
                 Services will Include
               </p>
               {Array.isArray(item.description) ? (
-                <ul className="">
+                <ul className="mb-12">
                   {item.description.map((desc, idx) => (
                     <li
                       key={idx}
@@ -128,16 +128,25 @@ const Seo = () => {
               ) : (
                 <p className="">{item.description}</p>
               )}
+
+              <div className="flex items-center justify-center w-full mt-5 absolute bottom-5 left-0 px-5">
+                <button
+                  onClick={() => navigate(item.link)}
+                  className="btn_pack"
+                >
+                  contact us
+                </button>
+              </div>
             </div>
           </div>
         ))}
       </div>
 
       <div className="w-full h-fit grid place-items-center gap-5 mb-5">
-        {dataList.slice(4, 8).map((item, index) => (
+        {dataList.slice(6, 10).map((item, index) => (
           <div
             key={index}
-            className="w-full sm:w-3/4 md:w-1/2 h-full flex flex-col justify-center"
+            className="w-full sm:w-3/4 md:w-1/2 h-full flex flex-col justify-center hover_up"
             onClick={() => navigate(item.link)}
           >
             <div
@@ -173,6 +182,14 @@ const Seo = () => {
               ) : (
                 <p className="">{item.description}</p>
               )}
+              <div className="flex items-center justify-center w-full mt-5">
+                <button
+                  onClick={() => navigate(item.link)}
+                  className="btn_pack"
+                >
+                  contact us
+                </button>
+              </div>
             </div>
           </div>
         ))}

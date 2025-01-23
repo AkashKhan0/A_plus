@@ -58,6 +58,7 @@ const dataList = [
     ],
     delivery: "10 days",
     price: "$ negotiable",
+    link: "/contact",
   },
   {
     title: "Ebay",
@@ -77,9 +78,10 @@ const dataList = [
     ],
     delivery: "10 days",
     price: "$ negotiable",
+    link: "/contact",
   },
   {
-    title: "Shopify/ wix/ wordpress",
+    title: "Shopify",
     description: [
       "Keyword Research",
       "Competitor Research",
@@ -91,6 +93,37 @@ const dataList = [
     ],
     delivery: "10 days",
     price: "$ negotiable",
+    link: "/contact",
+  },
+  {
+    title: "wix",
+    description: [
+      "Keyword Research",
+      "Competitor Research",
+      "SEO Optimized Title",
+      "Product Description",
+      "Meta Keywords",
+      "Google Meta Description",
+      "Image Alt Tags",
+    ],
+    delivery: "10 days",
+    price: "$ negotiable",
+    link: "/contact",
+  },
+  {
+    title: "wordpress",
+    description: [
+      "Keyword Research",
+      "Competitor Research",
+      "SEO Optimized Title",
+      "Product Description",
+      "Meta Keywords",
+      "Google Meta Description",
+      "Image Alt Tags",
+    ],
+    delivery: "10 days",
+    price: "$ negotiable",
+    link: "/contact",
   },
   {
     title: "Off-Page SEO",
@@ -108,6 +141,7 @@ const dataList = [
     ],
     delivery: "10 days",
     price: "$ 100 ",
+    link: "/contact",
   },
   {
     title: "On-Page SEO",
@@ -123,9 +157,10 @@ const dataList = [
     ],
     delivery: "10 days",
     price: "$ 100 ",
+    link: "/contact",
   },
   {
-    title: "Tech SEO",
+    title: "Technical SEO",
     description: [
       "Site Speed Optimization",
       "Mobile-Friendliness",
@@ -139,6 +174,7 @@ const dataList = [
     ],
     delivery: "10 days",
     price: "$ 100 ",
+    link: "/contact",
   },
   {
     title: "custom SEO",
@@ -148,7 +184,7 @@ const dataList = [
     link: "/contact",
   },
 
-  // marketing data list 8-9
+  // marketing data list 10-12
 
   {
     image: googleAds,
@@ -171,7 +207,7 @@ const dataList = [
     title: "Photoshoot",
     description:
       "Develop tech support platforms to assist users with troubleshooting, FAQs, and issue resolution effectively.",
-    link: "https://example.com/tech-support",
+    link: "/contact",
   },
 
   // website data list 7-33

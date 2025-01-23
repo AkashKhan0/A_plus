@@ -36,7 +36,7 @@ const Socialm = () => {
 
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24 text-white">
         {marketingData.slice(3, 6).map((item, index) => (
-          <div key={index} className="w-full h-full flex flex-col">
+          <div key={index} className="w-full h-full flex flex-col hover_up">
             <div
               className="seo_package flex flex-col h-full"
               onMouseMove={handleMouseMove}

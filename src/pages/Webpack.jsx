@@ -38,7 +38,7 @@ const Webpack = () => {
 
       <div className="w-full h-fit grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-5 mb-24 text-white">
         {marketingData.slice(6, 11).map((item, index) => (
-          <div key={index} className="w-full h-full flex flex-col">
+          <div key={index} className="w-full h-full flex flex-col hover_up">
             <div
               className="seo_package flex flex-col h-full"
               onMouseMove={handleMouseMove}
@@ -52,12 +52,8 @@ const Webpack = () => {
                 {item.package}
               </h1>
               <div className="flex items-center justify-between gap-2 flex-wrap">
-                <div className="delivery_web w-fit py-1 p-2 text-base font-semibold rounded-md">
-                  {item.package_for}
-                </div>
-                <div className="price_web w-fit py-1 p-2 text-base font-semibold rounded-md">
-                  {item.price}
-                </div>
+                <div className="delivery_web w-fit">{item.package_for}</div>
+                <div className="price_web w-fit">{item.price}</div>
               </div>
               <p className="text-center font-medium text-xl my-5">
                 {item.ideal}
@@ -76,6 +72,14 @@ const Webpack = () => {
               ) : (
                 <p className="">{item.description}</p>
               )}
+              <div className="flex items-center justify-center w-full mt-5">
+                <button
+                  onClick={() => navigate(item.link)}
+                  className="btn_pack"
+                >
+                  contact us
+                </button>
+              </div>
             </div>
           </div>
         ))}

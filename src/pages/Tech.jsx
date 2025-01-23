@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
 import dataList from "../assets/services";
 import serbg from "../assets/ser.jpg";
-const selectedItems = [dataList[10]];
+import { useNavigate } from "react-router-dom";
+const selectedItems = [dataList[12]];
+
 const Tech = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -42,6 +45,15 @@ const Tech = () => {
               <p className="card-p py-2 text-lg text-center px-3">
                 {item.description}
               </p>
+            </div>
+
+            <div className="flex items-center justify-center w-full mt-5 absolute bottom-5 left-0 px-5">
+              <button
+                onClick={() => navigate(item.link)}
+                className="btn_pack w-fit"
+              >
+                contact us
+              </button>
             </div>
           </div>
         ))}

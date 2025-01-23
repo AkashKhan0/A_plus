@@ -1,7 +1,7 @@
 import image1 from "./project1.jpg";
 import image2 from "./project2.jpg";
 import image8 from "./project8.jpg";
-import image9 from "./project9.jpg";
+import image9 from "./project7.jpg";
 // website 0 - 9
 
 const demodata = [
@@ -26,8 +26,8 @@ const demodata = [
   },
   {
     id: 9,
-    name: "Strength Password",
-    description: "https://akashkhan0.github.io/Strength-Password",
+    name: "Weather App",
+    description: "https://akashkhan0.github.io/weather-js",
     image: image9,
   },
   //

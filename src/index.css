@@ -140,13 +140,19 @@ button {
   letter-spacing: 2px;
   border: 1px solid #ffffff20;
   transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   z-index: 777;
   pointer-events: auto;
 }
 .btn1:hover {
   border: 1px solid #ff001900;
   background-color: #ff0018;
+}
+.btn_pack {
+  background-color: #ff0018;
+  border: 1px solid #ffffff20;
+  z-index: 777;
+  width: fit-content;
+  letter-spacing: 1px;
 }
 .icons {
   color: #fff;
@@ -520,11 +526,12 @@ button {
 }
 .f-list {
   color: #eee;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 300;
   margin: 8px 0px;
   cursor: pointer;
   letter-spacing: 1px;
+  letter-spacing: 0;
 }
 .footer {
   background-color: #eeeeee17;
@@ -788,7 +795,7 @@ textarea {
   height: 100%;
   padding: 0px 10px;
   background-color: transparent;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   resize: none;
   padding: 10px;
@@ -1223,35 +1230,44 @@ textarea {
   bottom: 10px;
   right: 10px;
   color: #eee;
-  padding: 8px;
-  border-radius: 50%;
+  border-radius: 8px;
   cursor: pointer;
   z-index: 777;
+  border: 1px solid #eee;
+  background-color: #111;
+}
+.chat_cat {
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+.chat_cat.visible {
+  opacity: 1;
 }
 .popup_box {
   position: fixed;
-  bottom: 70px;
   right: 20px;
   border: 1px solid #ffffff17;
-  padding: 10px 20px;
+  padding: 20px;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-radius: 5px;
   z-index: 777;
 }
 .popup_title {
-  font-size: 24px;
   text-align: center;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .chat_options {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  font-size: 32px;
+  gap: 30px;
+  padding: 10px 0;
 }
 .chat_m {
   transition: 0.3s all;
@@ -1452,6 +1468,7 @@ select option:hover {
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
+  border-radius: 5px;
 }
 .seo_package::before {
   content: "";
@@ -1473,8 +1490,14 @@ select option:hover {
   opacity: 1;
 }
 .seo_package:hover {
-  margin-top: -20px;
-  box-shadow: 0 0 10px #ffffff26, 0 0 10px inset #ffffff24;
+  box-shadow: 0 0 10px #ffffff26;
+}
+.hover_up {
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.hover_up:hover {
+  transform: scale(1.05);
 }
 .delivery,
 .price {
@@ -1489,9 +1512,15 @@ select option:hover {
 }
 .delivery,
 .delivery_web {
-  background-color: #9719034e;
+  background-color: #630;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
 }
 .price,
 .price_web {
-  background-color: #03a8f413;
+  background-color: #971903;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 600;
 }
