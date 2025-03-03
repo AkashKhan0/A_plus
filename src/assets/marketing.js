@@ -182,6 +182,43 @@ const marketingData = [
     ],
     link: "/contact",
   },
+
+  // wordpress
+  {
+    package: "WordPress",
+    package_for: "Basic to Advanced",
+    ideal:
+      "Businesses that need flexibility, scalability, and full control over their website.",
+    features: "Features",
+    price: "$150 - $2,000",
+    description: [
+      "Custom WordPress Website Design & Theme Customization",
+      "WordPress Plugin Development & Integration",
+      "WooCommerce Setup (E-commerce)",
+      "SEO Optimization Speed & Performance Optimization",
+      "Security & Malware Removal, Maintenance & Support",
+      "Migration from Other Platforms to WordPress",
+    ],
+    link: "/contact",
+  },
+
+  // wix
+  {
+    package: "Wix",
+    package_for: "Basic to Advanced",
+    ideal: "Clients who want a simple, fast, and easy-to-use website.",
+    features: "Features",
+    price: "$150 - $2,000",
+    description: [
+      "Custom Wix Website Design",
+      "Wix E-commerce Setup, SEO Optimization",
+      "Wix Speed Optimization, Mobile Responsiveness",
+      "Wix Blog & Portfolio Setup",
+      "Wix Booking & Appointment Integration",
+      "Wix Maintenance & Support",
+    ],
+    link: "/contact",
+  },
 ];
 
 export default marketingData;

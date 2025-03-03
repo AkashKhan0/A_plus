@@ -603,11 +603,6 @@ b {
   border-radius: 10px;
   object-fit: cover;
 }
-.owner_p img {
-  height: 230px;
-  object-fit: cover;
-  border-radius: 10px;
-}
 .project_a a {
   padding: 3px 15px;
   border: 1px solid #eeeeee49;
@@ -1113,19 +1108,18 @@ textarea {
 .u_card,
 .u_card1,
 .u_card2 {
-  width: 280px;
-  height: 350px;
   background-color: #0000000e;
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   display: grid;
-  place-content: center;
-  padding: 20px;
-  margin: 2rem;
+  place-items: center;
+  padding: 5px;
   color: #fff;
   border-radius: 1rem;
   isolation: isolate;
   overflow: hidden;
+  max-width: 400px;
+  margin-top: 20px;
 }
 .u_card::before,
 .u_card1::before,
@@ -1492,12 +1486,20 @@ select option:hover {
   box-shadow: 0 0 10px #ffffff26;
 }
 .hover_up {
-  transform: scale(1);
   transition: all 0.3s ease;
   cursor: pointer;
 }
 .hover_up:hover {
   transform: scale(1.05);
+  opacity: 1;
+}
+.hover_up_img img {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.hover_up_img:hover img {
+  transform: scale(1.05);
+  opacity: 1;
 }
 .delivery,
 .price {
@@ -1523,4 +1525,14 @@ select option:hover {
   padding: 5px 10px;
   font-size: 16px;
   font-weight: 600;
+}
+
+.gall {
+  width: fit-content;
+  padding: 3px 15px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
 }
