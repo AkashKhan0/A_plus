@@ -134,10 +134,11 @@ const Refund = () => {
           Refund Process
         </h1>
         <p className="re_p">
-          To request a refund, please contact our support team at [your email
-          address] with the following details: Service purchased Reason for
-          refund request Relevant supporting evidence (if any) Refunds will be
-          processed within 7-14 business days after approval.
+          To request a refund, please contact our support team at
+          aplusadvertisinghelpdesk@gmail.com with the following details: Service
+          purchased Reason for refund request Relevant supporting evidence (if
+          any) Refunds will be processed within 7-14 business days after
+          approval.
         </p>
         {/* 555555 */}
         <h1 className="re_title">
