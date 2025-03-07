@@ -31,7 +31,11 @@ const Projects = () => {
                 className="item"
                 style={{ "--position": index + 1 }}
               >
-                <img src={image} alt={`Dragon ${index + 1}`} />
+                <img
+                  src={image}
+                  alt={`Dragon ${index + 1}`}
+                  className="object-contain"
+                />
               </div>
             ))}
           </div>
