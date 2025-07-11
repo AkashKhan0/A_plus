@@ -34,10 +34,10 @@ const About = () => {
 
         <div className="w-full flex flex-col items-center justify-center gap-5 flex-wrap">
           {teamData.slice(0, 2).map((review, index) => (
-            <div className="u_card u_box w-full" key={index}>
+            <div className="u_card u_box" key={index}>
               <div className="owner">
                 <img src={review.image} alt="" className="" />
-                <div className="">
+                <div className="px-2">
                   <h1 className="text-xl sm:text-2xl capitalize font-medium text-center my-3">
                     {review.name}
                   </h1>
@@ -52,11 +52,11 @@ const About = () => {
 
         {/* owners */}
         <div className="w-full flex items-center justify-center gap-5 flex-wrap">
-          {teamData.slice(2, 5).map((review, index) => (
-            <div className="u_card1 u_box w-full" key={index}>
+          {teamData.slice(2, 6).map((review, index) => (
+            <div className="u_card1 u_box" key={index}>
               <div className="owner">
                 <img src={review.image} alt="" className="" />
-                <div className="">
+                <div className="px-2">
                   <h1 className="text-xl sm:text-2xl capitalize font-medium text-center my-3">
                     {review.name}
                   </h1>

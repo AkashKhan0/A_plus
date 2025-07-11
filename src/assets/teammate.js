@@ -3,6 +3,7 @@ import image2 from "./selim.jpg";
 import image3 from "./fahad.jpg";
 import image4 from "./saki.jpg";
 import image5 from "./sakib.jpg";
+import image6 from "./kawsar.jpg";
 
 const teamData = [
   {
@@ -20,20 +21,26 @@ const teamData = [
   {
     id: 3,
     name: "fahad nur akash",
-    description: "CTO at A Plus Advertising",
+    description: "CTO - Product & Engineering",
     image: image3,
   },
   {
-    id: 4,
+    id: 5,
     name: "shahriar hasan saki",
     description: "CMO at A Plus Advertising",
     image: image4,
   },
   {
-    id: 5,
+    id: 6,
     name: "shakib khan",
     description: "CFO at A Plus Advertising",
     image: image5,
+  },
+  {
+    id: 4,
+    name: "Kawsar Ahmed",
+    description: "CTO - Infrastructure & Systems",
+    image: image6,
   },
 ];
 

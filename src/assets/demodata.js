@@ -1,4 +1,5 @@
 // Import all 30 photos from the "gallery" folder
+// website
 import photo from "./gallery/photo.jpg";
 import photo1 from "./gallery/photo1.jpg";
 import photo2 from "./gallery/photo2.jpg";
@@ -7,6 +8,11 @@ import photo4 from "./gallery/photo4.jpg";
 import photo5 from "./gallery/photo19.jpg";
 import photo6 from "./gallery/photo20.jpg";
 import photo7 from "./gallery/photo21.jpg";
+import casino from "./gallery/casino.png";
+import evolved from "./gallery/evolved.png";
+import colaz from "./gallery/colaz.png";
+
+// photoshoot
 import photo8 from "./gallery/photo8.jpeg";
 import photo9 from "./gallery/photo9.jpeg";
 import photo10 from "./gallery/photo10.jpeg";
@@ -22,10 +28,16 @@ import photo19 from "./gallery/photo5.jpeg";
 import photo20 from "./gallery/photo6.jpeg";
 import photo21 from "./gallery/photo7.jpeg";
 
+
+
+
+
 // Store all images in an array
 const images = [
   photo,
-  photo1,
+  photo1,casino,
+evolved,
+colaz,
   photo2,
   photo3,
   photo4,
@@ -50,8 +62,8 @@ const images = [
 
 // Define categories and their image ranges
 export const categories = [
-  { name: "website", range: [0, 8] },
-  { name: "photoshoot", range: [9, 22] },
+  { name: "website", range: [0, 11] },
+  { name: "photoshoot", range: [12, 25] },
   { name: "seo", range: [30, 31] },
   { name: "marketing", range: [31, 32] },
   { name: "animation", range: [33, 34] },

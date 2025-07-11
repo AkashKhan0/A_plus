@@ -5,8 +5,8 @@ import serbg from "../assets/u_bg.jpg";
 
 const Project = () => {
   const [activeCategory, setActiveCategory] = useState("website");
+  const [selectedImage, setSelectedImage] = useState(null); // 🆕 for popup
 
-  // Find the selected category range
   const selectedCategory = categories.find(
     (cat) => cat.name === activeCategory
   );
@@ -15,9 +15,11 @@ const Project = () => {
     : [];
 
   const navigate = useNavigate();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
     <>
       <div className="con_bg">
@@ -40,21 +42,39 @@ const Project = () => {
           ))}
         </div>
 
+        {/* Image Grid */}
         <div className="w-full grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-5">
           {filteredData.map((review, index) => (
             <div
-              className="u_card2 h-[250px] u_box w-full hover_up_img overflow-hidden"
+              className="u_card2 u_box hover_up_img overflow-hidden"
               key={index}
             >
               <img
                 src={review.image}
                 alt={`Gallery Image ${index + 1}`}
-                className="w-full h-[245px] rounded-md object-contain"
+                className="w-full h-full max-h-[300px] rounded-md object-contain cursor-pointer"
+                onClick={() => setSelectedImage(review.image)} // 🆕 on click
               />
             </div>
           ))}
         </div>
-        {/* nine  */}
+
+        {/* Fullscreen Modal */}
+        {selectedImage && (
+          <div
+            className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+            onClick={() => setSelectedImage(null)}
+          >
+            <img
+              src={selectedImage}
+              alt="Selected"
+              className="max-w-[90%] max-h-[90%] rounded-lg"
+              onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
+            />
+          </div>
+        )}
+
+        {/* Contact section */}
         <div className="flex flex-col items-center justify-center my-20 text-white">
           <p className="w-fit tspan text-2xl mb-10">
             For any questions or concerns regarding this Privacy Policy, please

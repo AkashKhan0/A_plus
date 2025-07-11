@@ -140,7 +140,7 @@ button {
   letter-spacing: 2px;
   border: 1px solid #ffffff20;
   transition: all 0.3s ease-in-out;
-  z-index: 777;
+  z-index: 7;
   pointer-events: auto;
 }
 .btn1:hover {
