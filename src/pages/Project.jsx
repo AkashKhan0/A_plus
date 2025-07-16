@@ -5,7 +5,7 @@ import serbg from "../assets/u_bg.jpg";
 
 const Project = () => {
   const [activeCategory, setActiveCategory] = useState("website");
-  const [selectedImage, setSelectedImage] = useState(null); // 🆕 for popup
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const selectedCategory = categories.find(
     (cat) => cat.name === activeCategory
@@ -26,13 +26,14 @@ const Project = () => {
         <img src={serbg} alt="" />
       </div>
       <div className="w-full h-full py-10 relative text-black">
+        {/* Category Tabs */}
         <div className="flex flex-wrap gap-5 items-center justify-center my-10">
           {categories.map((category) => (
             <div
               key={category.name}
               className={`gall cursor-pointer px-4 py-2 mx-2 ${
                 activeCategory === category.name
-                  ? "bg-red-500 text-black"
+                  ? "bg-red-500 text-white"
                   : "bg-gray-200"
               }`}
               onClick={() => setActiveCategory(category.name)}
@@ -43,18 +44,40 @@ const Project = () => {
         </div>
 
         {/* Image Grid */}
-        <div className="w-full grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <div className="w-full grid grid-cols-1 place-items-center sm:grid-cols-2 md:grid-cols-3 gap-5 px-4">
           {filteredData.map((review, index) => (
             <div
-              className="u_card2 u_box hover_up_img overflow-hidden"
+              className="u_card2 u_box hover_up_img overflow-hidden bg-white shadow-md rounded-lg p-3"
               key={index}
             >
               <img
                 src={review.image}
                 alt={`Gallery Image ${index + 1}`}
                 className="w-full h-full max-h-[300px] rounded-md object-contain cursor-pointer"
-                onClick={() => setSelectedImage(review.image)} // 🆕 on click
+                onClick={() => setSelectedImage(review.image)}
               />
+
+              {/* Show description & link only for website category */}
+              {activeCategory === "website" && (
+                <div className="my-3 text-center">
+                  {review.description && (
+                    <p className="text-sm text-white mb-2">
+                      {review.description}
+                    </p>
+                  )}
+
+                  {review.link && (
+                    <a
+                      href={review.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-800 transition"
+                    >
+                      🔗 Live Link
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
           ))}
         </div>
@@ -69,20 +92,19 @@ const Project = () => {
               src={selectedImage}
               alt="Selected"
               className="max-w-[90%] max-h-[90%] rounded-lg"
-              onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
+              onClick={(e) => e.stopPropagation()}
             />
           </div>
         )}
 
-        {/* Contact section */}
+        {/* Contact Section */}
         <div className="flex flex-col items-center justify-center my-20 text-white">
-          <p className="w-fit tspan text-2xl mb-10">
+          <p className="w-fit tspan text-2xl mb-10 text-center">
             For any questions or concerns regarding this Privacy Policy, please
             contact us
           </p>
-
           <div className="btn1 w-40">
-            <button onClick={() => navigate("/contact")}>contact</button>
+            <button onClick={() => navigate("/contact")}>Contact</button>
           </div>
         </div>
       </div>
