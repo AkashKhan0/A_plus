@@ -73,48 +73,48 @@ const websiteDetails = [
     description: "Developed the frontend of this website using ReactJS, based on client-provided requirements",
   },
   {
-    link: "https://thecolazaesthetics.com/",
+    link: "https://evolvedaestheticsbd.com/",
     description: "Skin care and beauty salon website. Developed using WordPress",
   },
   {
-    link: "https://colaz-beauty.com",
+    link: "https://evolvedbd.com/",
     description: "Colaz Beauty Salon Portfolio",
   },
   {
-    link: "https://portfolio-dev.com",
-    description: "Fullstack Developer Portfolio",
+    link: "https://hospitalfront-ten.vercel.app/",
+    description: "Hopital Management System, Frontend using ReactJS",
   },
   {
-    link: "https://cms-business.com",
-    description: "Custom CMS for Businesses",
+    link: "https://akashkhan0.github.io/daugia/",
+    description: "Business website for a car auction company. Developed using HTML and CSS",
   },
   {
-    link: "https://blogpost.com",
-    description: "Responsive Blog Website",
+    link: "https://evolvedbd.com/",
+    description: "Hair transplant clinic website. Developed using WordPress",
   },
   {
     link: "https://dubaibdit.netlify.app/",
     description: "Developed the frontend of this website using ReactJS, based on client-provided requirements",
   },
   {
-    link: "https://fashion-landing.com",
-    description: "Developed the frontend of this website using ReactJS, based on client-provided requirements",
+    link: "https://front-mocha-nu.vercel.app/",
+    description: "Landing page website. Developed using ReactJS, based on client-provided requirements",
   },
   {
-    link: "https://creative-agency.com",
-    description: "Creative Agency Portfolio",
+    link: "https://akashkhan0.github.io/Pranto-Diagnostic-center/",
+    description: "Pranto- Diagnostic center. Only froentend developed using HTML and CSS",
   },
   {
-    link: "https://startup-boost.com",
-    description: "Startup Launching Website",
+    link: "https://3d-fahad.netlify.app/",
+    description: "3D Portfolio website. Developed using three.js and ReactJS",
   },
   {
-    link: "https://photo-portfolio.com",
+    link: "https://reloop-bd-client.vercel.app/",
     description: "Developed a full-featured eCommerce website using the MERN Stack (MongoDB, Express.js, React, Node.js).",
   },
   {
-    link: "https://photo-portfolio.com",
-    description: "Photography Portfolio Showcase",
+    link: "https://gemini-chat-ai.netlify.app/",
+    description: "Google Gemini AI chat bot. Developed using JavaScript.",
   },
 ];
 
