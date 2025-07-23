@@ -77,8 +77,8 @@ const websiteDetails = [
     description: "Skin care and beauty salon website. Developed using WordPress",
   },
   {
-    link: "https://evolvedbd.com/",
-    description: "Colaz Beauty Salon Portfolio",
+    link: "https://comfortxyz.aplusadvertisinglimited.com/",
+    description: "Hospital management system website. Developed using WordPress",
   },
   {
     link: "https://hospitalfront-ten.vercel.app/",
